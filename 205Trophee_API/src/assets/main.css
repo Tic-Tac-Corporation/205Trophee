@@ -12,3 +12,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+:root {
+  --color-primary: #D97A28;
+  --color-dark:    #141414;
+  --color-white:   #FFFFFF;
+}

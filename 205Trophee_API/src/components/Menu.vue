@@ -9,6 +9,7 @@ const triggerMenu = () => {
 }
 
 const menuItems = [
+	{ label: 'Accueil', to: '/' },
 	{ label: 'Le Projet', to: '/projet' },
 	{ label: 'Sponsors et boutique', to: '/sponsors' },
 	{ label: 'Nos contributeurs', to: '/contributeurs' },
@@ -49,7 +50,7 @@ const menuItems = [
 
 <style scoped>
 .menu-logo {
-	height: 3em;
+	height: 4.5em;
 }
 header {
 	display: flex;

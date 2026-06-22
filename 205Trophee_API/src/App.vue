@@ -5,7 +5,9 @@ import Menu from './components/Menu.vue';
 
 <template>
     <Menu/>
-    <footer>
+	<router-view/>
+ 
+	<footer>
     </footer>
 </template>
 
