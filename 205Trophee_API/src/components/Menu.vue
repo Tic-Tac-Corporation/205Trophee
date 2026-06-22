@@ -1,11 +1,23 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+import { useRouter, useRoute } from 'vue-router'
 import { ref } from 'vue'
+
+const router = useRouter()
+const route = useRoute()
 
 const menuIsTriggered = ref(false)
 
 const triggerMenu = () => {
 	menuIsTriggered.value = !menuIsTriggered.value
+}
+
+const closeMenuAndNavigate = (to: string) => {
+	menuIsTriggered.value = false
+	router.push(to)
+}
+
+const isActive = (itemTo: string) => {
+	return route.path === itemTo
 }
 
 const menuItems = [
@@ -35,14 +47,18 @@ const menuItems = [
 				<span></span>
 			</div>
 			<div class="menu-content">
-				<RouterLink
+				<div
 					v-for="item in menuItems"
 					:key="item.to"
-					:to="item.to"
-					@click="menuIsTriggered = false"
+					class="menu-link"
+					:class="{ 'router-link-exact-active': isActive(item.to) }"
+					@click="closeMenuAndNavigate(item.to)"
+					@keydown.enter="closeMenuAndNavigate(item.to)"
+					role="link"
+					tabindex="0"
 				>
 					{{ item.label }}
-				</RouterLink>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -57,11 +73,14 @@ header {
 	justify-content: center;
 	padding: 1.7em 1.3em;
 	gap: 1.3em;
-	position: absolute;
+	position: sticky;
+	top: 0.5em;
+	z-index: 100;
 	width: calc(100vw - 10em);
 }
 
 header a,
+header .menu-link,
 header .burger-icon span,
 header .menu-content {
 	transition: all 0.2s ease-in-out;
@@ -71,38 +90,45 @@ header * {
 	user-select: none;
 }
 
-header a {
+header a,
+header .menu-link {
 	font-size: large;
-	color: #141414;
+	color: var(--color-dark);
 	position: relative;
 	text-decoration: none;
+	cursor: pointer;
 }
 
-header a::after {
+header a::after,
+header .menu-link::after {
 	content: '';
 	position: absolute;
 	bottom: -4px;
 	left: 0;
 	width: 0;
 	height: 2px;
-	background-color: #D97A28;
+	background-color: var(--color-primary);
 	transition: width 0.3s ease-in-out;
 }
 
-header a:hover::after {
+header a:hover::after,
+header .menu-link:hover::after {
 	width: 100%;
 }
 
-header .router-link-exact-active {
-	color: #D97A28;
+header .router-link-exact-active,
+header .menu-link.router-link-exact-active {
+	color: var(--color-primary);
 }
 
-header .router-link-exact-active::after {
+header .router-link-exact-active::after,
+header .menu-link.router-link-exact-active::after {
 	width: 100%;
 }
 
 header .menu-wrapper {
 	border-radius: 1.2em;
+	transition: background-color 0.4s ease-in-out;
 }
 
 header .menu-content {
@@ -126,7 +152,7 @@ header .menu-content {
 	display: block;
 	width: 100%;
 	height: 3px;
-	background-color: #141414;
+	background-color: var(--color-dark);
 	border-radius: 2px;
 	transition: all 0.3s ease-in-out;
 	transform-origin: center;
@@ -148,13 +174,15 @@ header .menu-content {
 @media (min-width: 1024px) {
 	header {
 		margin: 0 5em 0 5em;
-		position: relative;
 	}
 
 	header .menu-wrapper {
 		display: flex;
 		align-items: center;
 		width: 100%;
+		background-color: var(--color-white-transparent);
+		backdrop-filter: blur(10px);
+		padding: 0.5em 1.5em;
 	}
 
 	header .menu-content {
@@ -164,31 +192,31 @@ header .menu-content {
 		flex: 1;
 	}
 
-	header a {
+	header a,
+	header .menu-link {
 		font-size: large;
-		color: #141414;
+		color: var(--color-dark);
 	}
 
 	header .menu-logo {
-		position: absolute;
-		left: 0%;
-		top: 50%;
-		transform: translateY(-50%);
+		height: 5em;
 	}
 }
 
 @media (max-width: 1024px) {
 	header {
 		padding: 0;
-		width: calc(100vw - 1.7em);
+		width: 100%;
 	}
 
 	header .menu-wrapper {
-		margin: 1.7em;
+		margin: 0 1.7em 1.7em 1.7em;
 		padding: 1.7em;
-		width: 100%;
+		width: calc(100vw - 3.4em);
+		box-sizing: border-box;
+		height: 5.4em;
 
-		background-color: rgba(255, 255, 255, 0.4);
+		background-color: var(--color-white-transparent);
 		backdrop-filter: blur(10px);
 
 		display: flex;
@@ -198,25 +226,31 @@ header .menu-content {
 	}
 
 	header .menu-wrapper.active {
-		background-color: #141414;
+		background-color: var(--color-dark);
+		width: calc(100vw - 3.4em);
+		height: 21em;
 	}
 
-	header .menu-wrapper.active a {
-		color: #FFFFFF;
+	header .menu-wrapper.active a,
+	header .menu-wrapper.active .menu-link {
+		color: var(--color-white);
 	}
 
 	header .menu-wrapper.active a:hover,
-	header .menu-wrapper.active .router-link-exact-active {
-		color: #D97A28;
+	header .menu-wrapper.active .menu-link:hover,
+	header .menu-wrapper.active .router-link-exact-active,
+	header .menu-wrapper.active .menu-link.router-link-exact-active {
+		color: var(--color-primary);
 	}
 
 	header .menu-wrapper.active .burger-icon span {
-		background-color: #FFFFFF;
+		background-color: var(--color-white);
 	}
 
 	header .menu-logo {
 		display: block;
 		margin-right: auto;
+		height: 2em;
 	}
 
 	.burger-icon {
@@ -227,7 +261,7 @@ header .menu-content {
 		max-height: 0;
 		opacity: 0;
 		overflow: hidden;
-		transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+		transition: max-height 0.4s ease-in-out, opacity 0.1s ease-in-out;
 		flex: 0 0 100%;
 	}
 

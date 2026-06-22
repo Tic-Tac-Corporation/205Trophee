@@ -11,10 +11,13 @@ body {
   font-family: 'Russo One', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-sable);
 }
 
 :root {
   --color-primary: #D97A28;
   --color-dark:    #141414;
   --color-white:   #FFFFFF;
+  --color-white-transparent: rgba(255, 255, 255, 0.4);
+  --color-sable: #F2EEE8;
 }
