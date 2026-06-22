@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Menu from './components/Menu.vue';
-
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-    <Menu/>
-    <footer>
-    </footer>
+	<RouterView />
+
+	<footer>
+	</footer>
 </template>
 
 <style scoped></style>

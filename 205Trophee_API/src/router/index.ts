@@ -1,21 +1,27 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainPage from '@/views/MainPage.vue'
 import Projet from '@/views/Projet.vue'
+import Tests from '@/views/Tests.vue'
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: MainPage
-        },
-        {
-            path: '/projet',
-            name: 'project',
-            component: Projet
-        },
-    ],
+	history: createWebHistory(import.meta.env.BASE_URL),
+	routes: [
+		{
+			path: '/',
+			name: 'home',
+			component: MainPage
+		},
+		{
+			path: '/projet',
+			name: 'project',
+			component: Projet
+		},
+		{
+			path: '/tests',
+			name: 'tests',
+			component: Tests
+		},
+	],
 })
 
 export default router
