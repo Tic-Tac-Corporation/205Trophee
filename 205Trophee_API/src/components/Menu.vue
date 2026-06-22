@@ -1,38 +1,43 @@
-<script setup>
-import { RouterLink } from 'vue-router';
-import IconMenu from './icons/IconMenu.vue';
-import { ref } from 'vue';
-import IconLogo from './icons/IconLogo.vue';
+<script setup lang="ts">
+import { RouterLink } from 'vue-router'
+import { ref } from 'vue'
 
-const menuIsTriggered = ref(false);
+const menuIsTriggered = ref(false)
 
 const triggerMenu = () => {
-	if (menuIsTriggered.value === true) menuIsTriggered.value = false;
-	else menuIsTriggered.value = true;
-
-	return;
+	menuIsTriggered.value = !menuIsTriggered.value
 }
+
+const menuItems = [
+	{ label: 'Le Projet', to: '/projet' },
+	{ label: 'Sponsors et boutique', to: '/sponsors' },
+	{ label: 'Nos contributeurs', to: '/contributeurs' },
+]
 </script>
 
 <template>
-	<img src="@/assets/logo_menu.png" alt="Logo" class="logo" />
-	<RouterLink to="/project">Le Projet</RouterLink>
-	<a>Sponsors et boutique</a>
-	<a>Nos contributeurs</a>
 	<header>
 		<div class="menu-wrapper" :class="{ active: menuIsTriggered }">
-			<IconLogo class="menu-logo" />
-			<IconMenu class="menu-icon" @click="triggerMenu" />
+			<img class="menu-logo" src="@/assets/logo_menu.png" alt="Logo 205 Trophée" />
+			<span class="menu-icon" @click="triggerMenu">☰</span>
 			<div class="menu-content">
-				<RouterLink to="/">Accueil</RouterLink>
-				<RouterLink to="/#storyTelling">Le Projet</RouterLink>
-				<RouterLink to="/">Sponsors</RouterLink>
+				<RouterLink
+					v-for="item in menuItems"
+					:key="item.to"
+					:to="item.to"
+					@click="menuIsTriggered = false"
+				>
+					{{ item.label }}
+				</RouterLink>
 			</div>
 		</div>
 	</header>
 </template>
 
 <style scoped>
+.menu-logo {
+	height: 3em;
+}
 header {
 	display: flex;
 	justify-content: center;
@@ -74,7 +79,7 @@ header .menu-icon {
 
 	header a {
 		font-size: large;
-		color: white;
+		color: black;
 	}
 
 	header .menu-logo {
