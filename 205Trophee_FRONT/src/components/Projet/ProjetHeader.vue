@@ -14,7 +14,6 @@
 					Des Terres Froides de l'Isère aux pistes marocaines, <br>
 					nous préparons un Peugeot 205 familliale pour relever <br>
 					un défi humain, mécanique et technologique.
-					
 				</div>
 			</div>
 
