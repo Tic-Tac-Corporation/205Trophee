@@ -5,7 +5,7 @@ import PresentationRally from '../Pilotes/PresentationRally.vue';
 <template>
 	<div class="container">
 		<div class="video-container">
-			<video src="@/assets/Video/intro.mp4" autoplay muted loop></video>
+			<video src="@/assets/Video/intro_light.mp4" autoplay muted loop></video>
 		</div>
 
 		<div class="logo-container">
