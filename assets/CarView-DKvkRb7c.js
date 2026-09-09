@@ -1,0 +1,1 @@
+import{r as e,s as t,t as n}from"./index-CL3vxN7u.js";var r={},i={class:`MainView`};function a(n,r){return t(),e(`main`,i,` VOITURE `)}var o=n(r,[[`render`,a]]);export{o as default};
