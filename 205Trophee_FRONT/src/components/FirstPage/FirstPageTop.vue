@@ -34,6 +34,7 @@ import PresentationRally from '../Pilotes/PresentationRally.vue';
 video {
 	object-fit: cover;
 	width: 100%;
+	height: 100vh;
 }
 
 .logo-container {
