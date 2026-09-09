@@ -1,0 +1,1 @@
+import{r as e,s as t,t as n}from"./index-CCVs4uDx.js";var r={};function i(n,r){return t(),e(`main`,null,` QUENTIN GONTIER `)}var a=n(r,[[`render`,i]]);export{a as default};
