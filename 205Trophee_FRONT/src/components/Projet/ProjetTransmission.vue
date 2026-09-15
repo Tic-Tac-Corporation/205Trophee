@@ -56,7 +56,7 @@ import IconWifi from '../SVG/IconWifi.vue';
 			<div class="item">
 				<IconWifi fill="#FFFFFF" :size="150" />
 				<div>
-					<h3>L'AVENTURE</h3>
+					<h3>LE PARTAGE</h3>
 					Faire vivre le projet au-delà de<br>
 					l'équipage grâce aux images<br>
 					embarquées, aux retransmissions<br>
@@ -73,7 +73,6 @@ import IconWifi from '../SVG/IconWifi.vue';
 .transmission-main-container {
 	background-color: #141414;
 	background-image: url(@/assets/topographie.png);
-	border-bottom: 1px solid white;
 	color: white;
 }
 
