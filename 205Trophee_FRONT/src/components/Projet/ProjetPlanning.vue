@@ -1,6 +1,9 @@
 <script setup>
 import IconCamera from '../SVG/IconCamera.vue';
 import IconCar from '../SVG/IconCar.vue';
+import IconChecklist from '../SVG/IconChecklist.vue';
+import IconEngine from '../SVG/IconEngine.vue';
+import IconRaceFlag from '../SVG/IconRaceFlag.vue';
 import IconTool from '../SVG/IconTool.vue';
 
 const phriseItems = [
@@ -12,7 +15,7 @@ const phriseItems = [
 	},
 	{
 		title: "Fiabilisation Mécanique",
-		icon: IconTool,
+		icon: IconEngine,
 		description: "Moteur, refroidissement, freinage et trains roulants.",
 		state: true
 	},
@@ -30,13 +33,13 @@ const phriseItems = [
 	},
 	{
 		title: "Essais et validation",
-		icon: IconTool,
+		icon: IconChecklist,
 		description: "Test routiers et contrôle de la fiabilité.",
 		state: false
 	},
 	{
 		title: "Départ",
-		icon: IconTool,
+		icon: IconRaceFlag,
 		description: "Acheminement, raid et action solidaire.",
 		state: false
 	},
