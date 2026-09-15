@@ -1,1 +1,0 @@
-import{a as e,l as t,t as n}from"./index-CU0bAY6r.js";var r={},i={class:`MainView`};function a(n,r){return t(),e(`main`,i,` VOITURE `)}var o=n(r,[[`render`,a]]);export{o as default};

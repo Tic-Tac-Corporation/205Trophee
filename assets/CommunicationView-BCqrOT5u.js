@@ -1,0 +1,1 @@
+import{a as e,l as t,t as n}from"./index-BmAEBXOK.js";var r={},i={class:`MainView`};function a(n,r){return t(),e(`main`,i,` COMMUNICATION `)}var o=n(r,[[`render`,a]]);export{o as default};
