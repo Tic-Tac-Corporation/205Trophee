@@ -57,7 +57,7 @@ const phriseItems = [
 				<div class="number">{{ number + 1 }}</div>
 				<div>
 					<div class="icon">
-						<component :is="item.icon" :size="60" />
+						<component :is="item.icon" :size="60" fill="var(--color-text)" />
 					</div>
 					<h4>{{ item.title }}</h4>
 					<div class="description">

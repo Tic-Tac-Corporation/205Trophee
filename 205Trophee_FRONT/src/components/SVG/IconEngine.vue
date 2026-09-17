@@ -5,11 +5,16 @@ const props = defineProps({
 		required: false,
 		default: 30
 	},
+	fill: {
+		type: String,
+		required: false,
+		default: '#000000'
+	},
 });
 </script>
 
 <template>
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" :width="size"
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :fill="fill" :width="size"
 		:height="size" version="1.1" id="Layer_1" viewBox="0 0 511.999 511.999" xml:space="preserve">
 		<g>
 			<g>

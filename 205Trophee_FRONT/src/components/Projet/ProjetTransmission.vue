@@ -2,7 +2,6 @@
 import IconCompass from '../SVG/IconCompass.vue';
 import IconTool from '../SVG/IconTool.vue';
 import IconWifi from '../SVG/IconWifi.vue';
-
 </script>
 
 <template>

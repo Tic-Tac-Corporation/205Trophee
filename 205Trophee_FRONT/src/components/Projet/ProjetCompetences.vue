@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
 	<div class="competences-container text-padding">
 		<div class="text-container">

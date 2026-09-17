@@ -5,7 +5,6 @@ import ProjetInfos from '@/components/Projet/ProjetInfos.vue';
 import ProjetObjectif from '@/components/Projet/ProjetObjectif.vue';
 import ProjetPlanning from '@/components/Projet/ProjetPlanning.vue';
 import ProjetTransmission from '@/components/Projet/ProjetTransmission.vue';
-
 </script>
 
 <template>
