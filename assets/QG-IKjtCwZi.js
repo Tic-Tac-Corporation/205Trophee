@@ -1,1 +1,0 @@
-import{a as e,l as t,t as n}from"./index-BmAEBXOK.js";var r={};function i(n,r){return t(),e(`main`,null,` QUENTIN GONTIER `)}var a=n(r,[[`render`,i]]);export{a as default};
