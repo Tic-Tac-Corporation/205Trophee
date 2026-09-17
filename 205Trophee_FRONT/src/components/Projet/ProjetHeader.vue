@@ -5,12 +5,15 @@
 	<header>
 		<div class="header-background">
 			<div class="header-title">
-				une <span>205</span>
-				<br>
-				<span>deux</span> ami<span>.</span>
-				<br>
-				une <span>aventure</span>
+				<div class="russo-one">
+					une <span>205</span>
+					<br>
+					<span>deux</span> ami<span>.</span>
+					<br>
+					une <span>aventure</span>
+				</div>
 				<div class="header-subtitle">
+					<br>
 					Des Terres Froides de l'Isère aux pistes marocaines, <br>
 					nous préparons un Peugeot 205 familliale pour relever <br>
 					un défi humain, mécanique et technologique.
@@ -47,12 +50,14 @@ header .header-title {
 	color: white;
 	margin-left: 2em;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	line-height: 1.2em;
 }
 
 header .header-title .header-subtitle {
 	font-size: medium;
 	font-weight: normal;
 	text-shadow: none;
+	line-height: normal;
 }
 
 header .header-title span {
