@@ -55,7 +55,7 @@ import IconGroup from '../SVG/IconGroup.vue';
 	-webkit-box-shadow: 0px 0px 15px -5px #000000;
 	box-shadow: 0px 0px 15px -5px #000000;
 	border-radius: 7px;
-	color: var(--color-text-inverted);
+	color: black;
 }
 
 .info {
