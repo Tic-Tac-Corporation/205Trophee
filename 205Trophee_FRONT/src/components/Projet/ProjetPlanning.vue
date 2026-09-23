@@ -48,7 +48,7 @@ const phriseItems = [
 
 <template>
 	<div class="planning-main-container text-padding">
-		<h1>De l'atelier aux pistes marocaines</h1>
+		<h2>De l'atelier aux pistes marocaines</h2>
 
 		<br><br>
 

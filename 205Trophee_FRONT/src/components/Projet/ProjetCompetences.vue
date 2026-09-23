@@ -2,7 +2,7 @@
 	<div class="competences-container text-padding">
 		<div class="text-container">
 			<div>
-				<h1>Deux amis, des compétences complémentaires</h1>
+				<h2>Deux amis, des compétences complémentaires</h2>
 				<p>
 					Amis depuis le collège et originaires des Terres Froides en Isère, nous réunissons nos compétences
 					mécaniques, organisationnelles et techniques autour d'un même objectif : préparer notre 205 et

@@ -1,5 +1,8 @@
 <script setup>
 import preparation from '@/utils/preparation.js';
+import ProgressBar from '../ProgressBar.vue';
+
+const moyennePreparation = Object.values(preparation).reduce((acc, item) => acc + item.pct, 0) / Object.values(preparation).length;
 </script>
 
 <template>
@@ -19,7 +22,10 @@ import preparation from '@/utils/preparation.js';
 					gris Zénith se pérapre auourd'hui à quitter <br>
 					les routes des Terres Froides pour affronter <br>
 					les pistes marocaines.
+					<br><br>
+					Préparation en cours<br>
 				</div>
+				<ProgressBar :progress="moyennePreparation" :width="60" />
 			</div>
 
 		</div>

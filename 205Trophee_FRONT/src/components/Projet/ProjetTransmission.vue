@@ -8,7 +8,7 @@ import IconWifi from '../SVG/IconWifi.vue';
 	<div class="transmission-main-container text-padding">
 		<div class="histoire-container">
 			<div>
-				<h1>Une histoire de transmission</h1>
+				<h2>Une histoire de transmission</h2>
 				<p>
 					Cette Peugeot 205 n'a pas été choisie au hasard. Ancienne voitire du grand-père d'un des membres de
 					l'équipage, elle a été conservée avec l'envie de lui offrir une nouvelle histoire.

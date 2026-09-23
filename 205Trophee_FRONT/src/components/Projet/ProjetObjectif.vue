@@ -5,7 +5,7 @@
 	<div class="objectifs-main-container text-margin">
 		<div class="objectifs-container">
 			<div>
-				<h1>Le 205 Trophée,<br>Bien plus qu'un Raid</h1>
+				<h2>Le 205 Trophée,<br>Bien plus qu'un Raid</h2>
 				<p>
 					Notre objectif est de préparer une Peugeot 205 simple, fiable et adaptée aux exigences des pistes
 					marocaines, puis de l'emmener jusqu'au bout du raid.
