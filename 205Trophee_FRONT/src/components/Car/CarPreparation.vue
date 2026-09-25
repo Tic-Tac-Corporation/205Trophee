@@ -1,5 +1,5 @@
 <script setup>
-import preparation from '@/utils/preparation.js';
+import steps from '@/utils/preparationSteps.js';
 import ProgressBar from '../ProgressBar.vue';
 </script>
 
@@ -10,13 +10,13 @@ import ProgressBar from '../ProgressBar.vue';
 		</div>
 
 		<div class="item-container">
-			<div class="item" v-for="prep in preparation" :key="prep.id">
-				<h4>{{ prep.title }}</h4>
-				<p>{{ prep.description }}</p>
+			<div class="item" v-for="step in steps" :key="step.id">
+				<h4>{{ step.title }}</h4>
+				<p>{{ step.description }}</p>
 				<div class="progress-bar-container">
-					<ProgressBar :progress="prep.pct" />
+					<ProgressBar :progress="step.pct" />
 				</div>
-				<div class="status">{{ prep.status }}</div>
+				<div class="status">{{ step.status }}</div>
 			</div>
 		</div>
 	</div>
