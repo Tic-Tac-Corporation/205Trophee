@@ -1,6 +1,6 @@
 <script setup>
 import CarJournalPrepCard from './CarJournalPrepCard.vue';
-import { onMounted, ref, toRefs, watch, watchEffect } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 
 const props = defineProps({
 	preps: {
@@ -9,7 +9,6 @@ const props = defineProps({
 	},
 });
 
-const columnNumber = ref(0);
 const prepsList = ref({
 	firstColumn: [],
 	lastColumn: []
@@ -21,15 +20,7 @@ const buildPrepsList = () => {
 		if (index % 2 === 0) prepsList.value.firstColumn.push(prep);
 		else prepsList.value.lastColumn.push(prep);
 	})
-
-	columnNumber.value = Math.max(0, Math.max(prepsList.value.firstColumn.length, prepsList.value.lastColumn.length) - 1);
-
-
-	console.log('buildPrepsList');
-	console.log(columnNumber.value);
-
 }
-
 
 watch(props.preps, buildPrepsList)
 onMounted(buildPrepsList);

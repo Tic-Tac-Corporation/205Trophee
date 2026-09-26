@@ -60,6 +60,12 @@ const props = defineProps({
 
 .prep-card .header {
 	display: flex;
-	gap: 3em;
+	gap: 0.5em 3em;
+}
+
+@media (max-width: 500px) {
+	.prep-card .header  {
+		flex-wrap: wrap;
+	}
 }
 </style>

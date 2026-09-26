@@ -9,6 +9,7 @@ import CarJournalOneColumn from './CarJournal/CarJournalOneColumn.vue';
 const { width } = useWindowSize()
 const list = ref([...preparations]);
 const stepsNames = Object.keys(steps);
+const selectedStepName = ref('all');
 
 const checkStepNameExists = (stepName) => {
 	return stepName === 'all' || stepsNames.includes(stepName);
@@ -17,6 +18,8 @@ const checkStepNameExists = (stepName) => {
 const getList = (stepName) => {
 	// StepName inconnu
 	if (!checkStepNameExists(stepName)) return list.value = [];
+
+	selectedStepName.value = stepName;
 
 	// On veut tout voir
 	if (stepName === 'all') return list.value = [...preparations];
@@ -33,10 +36,13 @@ const getList = (stepName) => {
 	<div class="journal-container text-padding">
 		<h2>Le journal de la préparation</h2>
 
-		<button @click="getList('all')">TOUT</button>
-		<button v-for="stepName in stepsNames" @click="getList(stepName)">{{ stepName }}</button>
+		<div class="btn-container">
+			<button @click="getList('all')" :class="{ selected: selectedStepName === 'all' }">TOUT</button>
+			<button v-for="stepName in stepsNames" @click="getList(stepName)"
+				:class="{ selected: selectedStepName === stepName }">{{ stepName }}</button>
+		</div>
 
-		<br><br>
+		<br>
 
 		<div class="journal-display-container" v-if="list">
 			<CarJournaTwoColumns v-if="width > 1300" :preps="list" />
@@ -47,8 +53,30 @@ const getList = (stepName) => {
 </template>
 
 <style scoped>
-.journal-display-container {
+@media (min-width: 1300px) {
+	.journal-display-container {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.btn-container {
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+.btn-container button {
+	text-transform: uppercase;
+	padding: 0.5em 0.7em;
+	border-radius: 0.5em;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn-container button.selected {
+	background-color: #5D8FA8;
+	color: white;
 }
 </style>
