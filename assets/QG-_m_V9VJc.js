@@ -1,1 +1,0 @@
-import{g as e,s as t,t as n}from"./index-CYbJctxh.js";var r={};function i(n,r){return e(),t(`main`,null,` QUENTIN GONTIER `)}var a=n(r,[[`render`,i]]);export{a as default};
