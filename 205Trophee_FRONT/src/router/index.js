@@ -36,6 +36,11 @@ const router = createRouter({
 			name: 'Communication',
 			component: () => import('../views/CommunicationView.vue'),
 		},
+		{
+			path: '/sponsors',
+			name: 'Sponsors',
+			component: () => import('../views/SponsorsView.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		// always scroll to top
