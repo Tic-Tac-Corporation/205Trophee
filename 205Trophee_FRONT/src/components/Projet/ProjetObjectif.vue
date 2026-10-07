@@ -83,7 +83,7 @@
 }
 
 .orange {
-	color: #D97A28;
+	color: var(--color-orange);
 	font-size: 5em;
 	font-weight: bold;
 	text-align: center;

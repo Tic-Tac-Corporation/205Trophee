@@ -67,7 +67,7 @@ onMounted(buildPrepsList);
 .journal-display-container table tr td:nth-child(2)::before {
 	content: "";
 	display: block;
-	border: 3px solid #D97A28;
+	border: 3px solid var(--color-orange);
 	width: 1px;
 	height: 100%;
 	position: absolute;

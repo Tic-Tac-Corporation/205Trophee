@@ -69,7 +69,7 @@ header .header-title .header-subtitle {
 }
 
 header .header-title span {
-	color: #D97A28;
+	color: var(--color-orange);
 }
 
 @media (max-width: 1024px) {

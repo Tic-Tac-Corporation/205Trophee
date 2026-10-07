@@ -59,3 +59,18 @@ h4 {
 		padding: 1.5em;
 	}
 }
+
+.WARNING {
+	background-color: yellow;
+	color: black;
+	padding: 1em 3em;
+	display: flex;
+	gap: 1em;
+	font-size: larger;
+}
+
+.WARNING::before {
+	content: "⚠";
+	display: block;
+	color: red;
+}

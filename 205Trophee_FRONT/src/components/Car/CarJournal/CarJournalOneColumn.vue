@@ -28,7 +28,7 @@ const props = defineProps({
 .journal-display-container::before {
 	content: "";
 	display: block;
-	border: 3px solid #D97A28;
+	border: 3px solid var(--color-orange);
 	width: 1px;
 	height: 100%;
 	position: absolute;

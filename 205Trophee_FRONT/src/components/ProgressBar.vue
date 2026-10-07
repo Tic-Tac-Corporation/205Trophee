@@ -29,7 +29,7 @@ const props = defineProps({
 .progress-bar-container .progress {
 	height: 100%;
 	border-radius: 5px;
-	background-color: #D97A28;
+	background-color: var(--color-orange);
 	border: 1px solid rgba(173, 93, 93, 0.5)
 }
 </style>

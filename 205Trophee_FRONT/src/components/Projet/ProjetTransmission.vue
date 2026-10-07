@@ -106,7 +106,7 @@ import IconWifi from '../SVG/IconWifi.vue';
 	border-radius: 0.5em;
 	border: none;
 	text-transform: uppercase;
-	background-color: #D97A28;
+	background-color: var(--color-orange);
 	color: white;
 	font-size: smaller;
 }
@@ -138,6 +138,6 @@ import IconWifi from '../SVG/IconWifi.vue';
 }
 
 .items-container .item:nth-child(2n) {
-	background-color: #D97A28;
+	background-color: var(--color-orange);
 }
 </style>

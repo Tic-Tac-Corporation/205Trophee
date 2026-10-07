@@ -67,7 +67,7 @@ import IconGroup from '../SVG/IconGroup.vue';
 }
 
 .info .number {
-	color: #D97A28;
+	color: var(--color-orange);
 	font-size: xx-large;
 	font-weight: bold;
 	text-align: center;

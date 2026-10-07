@@ -6,21 +6,30 @@
 		<div class="header-background">
 			<div class="header-title">
 				<div class="russo-one">
-					une <span>205</span>
-					<br>
-					<span>deux</span> ami<span>.</span>
-					<br>
-					une <span>aventure</span>
+					Vivez le raid <br>
+					de l'<span>intérieur</span>
 				</div>
 				<div class="header-subtitle">
 					<br>
-					Des Terres Froides de l'Isère aux pistes marocaines, <br>
-					nous préparons un Peugeot 205 familliale pour relever <br>
-					un défi humain, mécanique et technologique.
+					Grâce à notre dispositif de captation et de diffusion <br>
+					embarqué, suivez la route, l'équipage et les coulisses <br>
+					de l'aventure au plus près du terrain.
+					<div>
+						<br><br>
+						<a href="https://www.twitch.tv/205dtf" target="_blank" class="btn-twitch">
+							VOIR LE DIRECT
+						</a>
+						<br><br><br>
+						<div class="next-live">
+							<span></span>
+							Prochain direct à venir
+						</div>
+					</div>
 				</div>
 			</div>
 
 		</div>
+
 	</header>
 </template>
 
@@ -39,6 +48,7 @@ header .header-background {
 	height: 700px;
 
 	display: flex;
+
 	justify-content: flex-start;
 	align-items: center;
 }
@@ -47,10 +57,10 @@ header .header-title {
 	text-transform: uppercase;
 	font-size: 5em;
 	font-weight: bold;
+	line-height: 1.2em;
 	color: white;
 	margin-left: 2em;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-	line-height: 1.2em;
 }
 
 header .header-title .header-subtitle {
@@ -69,5 +79,27 @@ header .header-title span {
 		margin-left: 1em;
 		font-size: 3em;
 	}
+}
+
+.btn-twitch {
+	background-color: var(--color-orange);
+	font-weight: bold;
+	padding: 0.5em 1.5em;
+	border-radius: 0.5em;
+	border: none;
+	outline: none;
+}
+
+.next-live {
+	display: flex;
+	gap: 0.7em;
+}
+
+.next-live span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-color: rgb(0, 192, 0);
+	border-radius: 100%;
 }
 </style>
