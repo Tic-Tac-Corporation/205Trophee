@@ -36,7 +36,7 @@ const items = [
 
 <template>
 	<div class="soutien-container text-padding">
-		<h2>Votre soutien devient concret</h2>
+		<h2>Votre soutien <span class="text-orange">devient concret</span></h2>
 		<br>
 		<div class="items-container">
 			<div class="item" v-for="(item, index) in items" :key="index">

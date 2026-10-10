@@ -30,12 +30,12 @@ const items = [
 
 <template>
 	<div class="accompagnement-container text-padding">
-		<h2>Plusieurs façons de nous accompagner</h2>
+		<h2>Plusieurs façons <span class="text-orange">de nous accompagner</span></h2>
 		<br>
 		<div class="items-container">
 			<div class="item" v-for="(item, index) in items" :key="index">
 				<div class="icon">
-					<component :is="item.icon" :size="50"  fill="var(--color-text)" />
+					<component :is="item.icon" :size="50" fill="var(--color-text)" />
 				</div>
 				<h4>{{ item.title }}</h4>
 				<p>{{ item.text }}</p>

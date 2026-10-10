@@ -6,7 +6,7 @@ import IconHandshake from '../SVG/IconHandshake.vue';
 <template>
 	<div class="list-main-container text-padding">
 		<div class="title-container">
-			<h2>Les premiers partenaires <br>de l'aventure</h2>
+			<h2>Les <span class="text-orange">premiers partenaires</span> <br>de l'aventure</h2>
 			<div class="orange">Et si la première collaboration était la vôtre ?</div>
 			<button class="orange">Echangeons sur le projet</button>
 		</div>
