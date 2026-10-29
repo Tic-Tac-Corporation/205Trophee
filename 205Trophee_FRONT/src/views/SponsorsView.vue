@@ -5,6 +5,7 @@ import SponsorsFinancement from '@/components/Sponsors/SponsorsFinancement.vue';
 import SponsorsHeader from '@/components/Sponsors/SponsorsHeader.vue';
 import SponsorsList from '@/components/Sponsors/SponsorsList.vue';
 import SponsorsMarquePlacement from '@/components/Sponsors/SponsorsMarquePlacement.vue';
+import SponsorsOtherPlans from '@/components/Sponsors/SponsorsOtherPlans.vue';
 import SponsorsSoutien from '@/components/Sponsors/SponsorsSoutien.vue';
 import SponsorsWhy from '@/components/Sponsors/SponsorsWhy.vue';
 
@@ -20,6 +21,7 @@ import SponsorsWhy from '@/components/Sponsors/SponsorsWhy.vue';
 		<SponsorsMarquePlacement />
 		<SponsorsWhy />
 		<SponsorPlans />
+		<SponsorsOtherPlans />
 	</main>
 </template>
 

@@ -102,5 +102,9 @@ import IconStar from '../SVG/IconStar.vue';
 	.items-container {
 		flex-wrap: wrap;
 	}
+
+	.item {
+		width: 100%;
+	}
 }
 </style>
