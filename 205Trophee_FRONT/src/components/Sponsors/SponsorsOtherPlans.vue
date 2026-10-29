@@ -65,5 +65,6 @@ button {
 	color: white;
 	text-transform: uppercase;
 	border-radius: 0.5em;
+	cursor: pointer;
 }
 </style>
