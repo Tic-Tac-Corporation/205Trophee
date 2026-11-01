@@ -18,11 +18,6 @@ const moyennePreparation = Object.values(steps).reduce((acc, step) => acc + step
 				</div>
 				<div class="header-subtitle">
 					<br>
-					Ancienne voiture familiale, notre peugeot 205 <br>
-					Zénith se pérapre auourd'hui à quitter <br>
-					les routes des Terres Froides pour affronter <br>
-					les pistes marocaines.
-					<br><br>
 					Préparation en cours<br>
 				</div>
 				<ProgressBar :progress="moyennePreparation" :width="60" />

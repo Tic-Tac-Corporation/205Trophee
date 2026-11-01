@@ -40,3 +40,6 @@ __screenshots__/
 
 # VIDEO
 intro.mp4
+
+# GIT
+.env.local

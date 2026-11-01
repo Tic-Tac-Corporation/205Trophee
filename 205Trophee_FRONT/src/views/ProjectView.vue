@@ -1,4 +1,5 @@
 <script setup>
+import CarPreparation from '@/components/Car/CarPreparation.vue';
 import ProjetCompetences from '@/components/Projet/ProjetCompetences.vue';
 import ProjetHeader from '@/components/Projet/ProjetHeader.vue';
 import ProjetInfos from '@/components/Projet/ProjetInfos.vue';
