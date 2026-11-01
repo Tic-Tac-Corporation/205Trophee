@@ -23,6 +23,7 @@ const triggerMenu = () => {
 				<RouterLink to="/">Accueil</RouterLink>
 				<RouterLink to="/project">Le Projet</RouterLink>
 				<RouterLink to="/car">La Préparation</RouterLink>
+				<RouterLink to="/com">Le Système de Diffusion</RouterLink>
 				<RouterLink to="/sponsors">Sponsors</RouterLink>
 				<RouterLink to="/">Nous Aider</RouterLink>
 			</div>

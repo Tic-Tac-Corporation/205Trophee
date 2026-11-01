@@ -19,7 +19,7 @@ const moyennePreparation = Object.values(steps).reduce((acc, step) => acc + step
 				<div class="header-subtitle">
 					<br>
 					Ancienne voiture familiale, notre peugeot 205 <br>
-					gris Zénith se pérapre auourd'hui à quitter <br>
+					Zénith se pérapre auourd'hui à quitter <br>
 					les routes des Terres Froides pour affronter <br>
 					les pistes marocaines.
 					<br><br>
@@ -39,7 +39,6 @@ header {
 }
 
 header .header-background {
-
 	background-image: url('@/assets/projet_header.webp');
 	background-repeat: no-repeat;
 	background-size: cover;

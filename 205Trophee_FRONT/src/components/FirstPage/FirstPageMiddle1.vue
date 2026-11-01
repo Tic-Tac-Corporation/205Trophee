@@ -8,8 +8,8 @@ import Card from '../SecondPage/Card.vue';
 		<h1>OUI</h1>
 		<div class="cards-container">
 			<Card title="Le Projet" backgroundUrl="205trophee.jpg" link="/project" />
-			<Card title="La 205" backgroundUrl="205.jpg" link="/car" />
-			<Card title="La Com'" backgroundUrl="communication.jpg" link="/com" />
+			<Card title="La Préparation" backgroundUrl="205.jpg" link="/car" />
+			<Card title="Le Système de Diffusion" backgroundUrl="communication.jpg" link="/com" />
 		</div>
 	</div>
 </template>

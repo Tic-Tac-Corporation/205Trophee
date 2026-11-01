@@ -25,7 +25,7 @@ const carInfos = [
 	{
 		title: "Couleur",
 		icon: IconBrush,
-		info: "Gris Zénith",
+		info: "Gris",
 	},
 	{
 		title: "Objectif",
@@ -45,15 +45,15 @@ const carInfos = [
 		<div class="text-container">
 			<h2>
 				Une voiture familiale<br>
-				devenur projet d'avanture
+				devenue projet d'aventure
 			</h2>
 			<p>
-				Cette Peogeot 205 n'a pas été choisi au hasard.<br>
+				Cette Peugeot 205 n'a pas été choisi au hasard.<br>
 				Ancienne voiture du grand-père de l'un des memmbres<br>
 				de l'équipage, elle a été récupéré avec l'envie de<br>
 				préserver son histoire tout en lui offrant une nouvelle destination.<br>
 				<br>
-				Notre objecti n'est pas d'en faire un prototype de<br>
+				Notre objectif n'est pas d'en faire un prototype de<br>
 				compétition, mais de construire une voiture simple,<br>
 				fiable et cohérente avec les exigences du raid.
 			</p>
