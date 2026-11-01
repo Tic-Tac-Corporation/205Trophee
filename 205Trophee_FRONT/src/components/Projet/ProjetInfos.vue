@@ -1,10 +1,8 @@
 <script setup>
-import IconCamera from '../SVG/IconCamera.vue';
 import IconCar from '../SVG/IconCar.vue';
 import IconEuro from '../SVG/IconEuro.vue';
 import IconGroup from '../SVG/IconGroup.vue';
-
-
+import IconHandshake from '../SVG/IconHandshake.vue';
 </script>
 
 <template>
@@ -34,10 +32,10 @@ import IconGroup from '../SVG/IconGroup.vue';
 		</div>
 
 		<div class="info">
-			<IconCamera :size="60" />
+			<IconHandshake :size="60" />
 			<div>
-				<div class="number">2 Caméras 4K</div>
-				<div>Pour partager l'aventure</div>
+				<div class="number">1</div>
+				<div>mission humanitaire</div>
 			</div>
 		</div>
 	</div>
@@ -48,7 +46,7 @@ import IconGroup from '../SVG/IconGroup.vue';
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2em;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	position: relative;
 	bottom: 2.5em;
 	background-color: white;

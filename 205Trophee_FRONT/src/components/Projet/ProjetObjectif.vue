@@ -5,34 +5,32 @@
 	<div class="objectifs-main-container text-margin">
 		<div class="objectifs-container">
 			<div>
-				<h2>Le 205 Trophée,<br>Bien plus qu'un Raid</h2>
+				<h2>Le 205 Trophée,<br>Des Terres Froides au Désert Marocain</h2>
 				<p>
-					Notre objectif est de préparer une Peugeot 205 simple, fiable et adaptée aux exigences des pistes
-					marocaines, puis de l'emmener jusqu'au bout du raid.
-					<br>
-					Cette aventure représente un défi complet : remettre en état et fiabiliser la voiture, organiser
-					notre
-					participation, concevoir les équipements embarqués et partager chaque étape du projet avec le public
-					et
-					nos partenaires.
-					<br>
-					Plus qu'une perfomance sportive, nous souhaitons vivre une expérience humaine faite d'apprentissage,
-					d'entraide, de dévouverte et de dépassement de soi.
+					Le 205 Trophée n'est pas une course de vitesse, mais une aventure d'orientation et d'endurance à
+					travers les pistes marocaines.
+					<div class="thin-br" />
+					À bord d'une Peugeot 205 préparée par nos soins, notre objectif est de rejoindre l'arrivée en
+					privilégiant la fiabilité, l'entraide et l'adaptation aux conditions du terrain.
+					<div class="thin-br" />
+					Au-delà du défi mécanique, cette aventure représente une expérience humaine unique, faite de
+					rencontres, de dépassement de soi et de solidarité.
 				</p>
+				<div class="citation">
+					<span class="orange">“</span>
+					<div>
+						<div>Notre ligne directrice :</div>
+						<div>faire simple, fiable et réparable.</div>
+					</div>
+					<span class="orange">”</span>
+				</div>
 			</div>
 			<div class="img-container">
-				<img src="@/assets/205_avant_travaux.jpg" alt="">
+				<img src="@/assets/205_table_orientation.jpg" alt="">
 			</div>
 		</div>
 
-		<div class="citation">
-			<span class="orange">“</span>
-			<div>
-				<div>Notre ligne directrice :</div>
-				<div>faire simple, fiable et réparable.</div>
-			</div>
-			<span class="orange">”</span>
-		</div>
+
 	</div>
 </template>
 
@@ -50,6 +48,7 @@
 	gap: 1em;
 	margin-top: 1.5em;
 	font-size: 1.5em;
+	justify-content: center;
 }
 
 @media (max-width: 630px) {

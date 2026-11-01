@@ -10,19 +10,20 @@ import IconWifi from '../SVG/IconWifi.vue';
 			<div>
 				<h2>Une histoire de transmission</h2>
 				<p>
-					Cette Peugeot 205 n'a pas été choisie au hasard. Ancienne voitire du grand-père d'un des membres de
-					l'équipage, elle a été conservée avec l'envie de lui offrir une nouvelle histoire.
-					<br><br>
-					Après plusieurs années sur les routes d'Isére, elle se prépare aujourd'hui à quitter les Terres
-					Froides pour affonter un terrain totalement diférent : les pistes marocaines.
-					<br><br>
-					Notre ambition n'est pas de la transformer en prototype de compétition, mais de préserver son
-					identité tout en réalisant une préparation cohérente, robuste et accessible.
+					Cette Peugeot 205 n'a pas été choisie au hasard. Ancienne voiture du grand-père d'un membre de
+					l'équipage, elle représente une histoire familiale que nous souhaitons prolonger à travers ce
+					projet.
+					<div class="thin-br" />
+					Après plusieurs années sur les routes de l'Isère, elle s'apprête désormais à découvrir les pistes
+					marocaines.
+					<div class="thin-br" />
+					Notre objectif n'est pas de la transformer en véhicule de compétition, mais de préserver son esprit
+					d'origine tout en la préparant pour relever ce nouveau défi.
 				</p>
 			</div>
 
 			<div class="image-container">
-				<img src="@/assets/205_objectif.webp" alt="">
+				<img src="@/assets/205_avant_travaux.jpg" alt="">
 				<RouterLink to="/car">Voir la préparation de la 205</RouterLink>
 			</div>
 		</div>
@@ -34,10 +35,7 @@ import IconWifi from '../SVG/IconWifi.vue';
 				<IconCompass fill="#FFFFFF" :size="150" />
 				<div>
 					<h3>L'AVENTURE</h3>
-					Sortir de notre quotidien,<br>
-					parcourir de nouveaux territoires<br>
-					et vivre une expérience inspirée<br>
-					des grands rallyes-raids.
+					Traverser le Maroc au volant d'une Peugeot 205, découvrir de nouveaux paysages et vivre une expérience inspirée des grands rallyes-raids.
 				</div>
 			</div>
 
@@ -45,10 +43,7 @@ import IconWifi from '../SVG/IconWifi.vue';
 				<IconTool fill="#FFFFFF" :size="150" />
 				<div>
 					<h3>Le défi mécanique</h3>
-					Préparer nos-mêmes une 205 fiable,<br>
-					comprendre chaque modification et<br>
-					privilégier des solutions simples et<br>
-					réparables sur le terrain.
+					Préparer et fiabiliser un véhicule de près de 40 ans afin qu'il puisse parcourir plusieurs milliers de kilomètres dans des conditions exigeantes.
 				</div>
 			</div>
 
@@ -56,15 +51,10 @@ import IconWifi from '../SVG/IconWifi.vue';
 				<IconWifi fill="#FFFFFF" :size="150" />
 				<div>
 					<h3>LE PARTAGE</h3>
-					Faire vivre le projet au-delà de<br>
-					l'équipage grâce aux images<br>
-					embarquées, aux retransmissions<br>
-					en direct et aux contenus publiés<br>
-					tout au long de l'aventure.
+					Faire vivre cette aventure à nos proches, nos partenaires et notre communauté grâce aux contenus publiés avant, pendant et après le raid.
 				</div>
 			</div>
 		</div>
-
 	</div>
 </template>
 

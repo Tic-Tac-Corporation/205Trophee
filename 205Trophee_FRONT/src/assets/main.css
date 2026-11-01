@@ -78,3 +78,7 @@ h4 {
 .text-orange {
 	color: var(--color-orange);
 }
+
+.thin-br {
+	height: 10px;
+}

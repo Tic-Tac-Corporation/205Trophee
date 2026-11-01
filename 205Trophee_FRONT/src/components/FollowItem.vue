@@ -19,7 +19,7 @@ const props = defineProps({
 		<IconTrello :size="25" />
 	</div>
 	<div v-else-if="title == 'Twitch'" :title="title">
-		<a href="https://www.twitch.tv/205dtf" target="_blank">
+		<a href="https://205dtf.fr/twitch" target="_blank">
 			<IconTwitch :size="30" />
 		</a>
 	</div>
