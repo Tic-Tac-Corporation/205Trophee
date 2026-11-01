@@ -20,8 +20,8 @@
 					d'entraide, de dévouverte et de dépassement de soi.
 				</p>
 			</div>
-			<div>
-				<img src="@/assets/205_en_travaux.png" alt="">
+			<div class="img-container">
+				<img src="@/assets/205_avant_travaux.jpg" alt="">
 			</div>
 		</div>
 
@@ -43,12 +43,6 @@
 	align-items: center;
 }
 
-@media (max-width: 1300px) {
-	.objectifs-container {
-		flex-wrap: wrap;
-	}
-}
-
 
 .citation {
 	font-style: italic;
@@ -64,7 +58,7 @@
 	}
 }
 
-.citation > span {
+.citation>span {
 	max-height: 130px;
 }
 
@@ -89,14 +83,34 @@
 	text-align: center;
 }
 
+.img-container {
+	max-height: 40vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.7em;
+}
+
+img {
+	max-width: 40vw;
+}
+
 @media (max-width: 1024px) {
 	.orange {
 		font-size: 2.5em;
 	}
 }
 
-img {
-	border-radius: 0.7em;
-	max-width: 90vw;
+
+@media (max-width: 1300px) {
+	.objectifs-container {
+		flex-wrap: wrap;
+	}
+
+	.img-container,
+	img {
+		max-width: 90vw;
+	}
 }
 </style>
