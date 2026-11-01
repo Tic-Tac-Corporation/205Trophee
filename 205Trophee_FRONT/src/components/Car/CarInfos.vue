@@ -79,7 +79,7 @@ const carInfos = [
 .main-container {
 	display: flex;
 	gap: 2em;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .image-container img {

@@ -113,7 +113,7 @@ import IconWifi from '../SVG/IconWifi.vue';
 
 .items-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	gap: 1.2em 3em;
 }
 

@@ -30,7 +30,7 @@ import IconHandshake from '../SVG/IconHandshake.vue';
 <style scoped>
 .list-main-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .title-container {
