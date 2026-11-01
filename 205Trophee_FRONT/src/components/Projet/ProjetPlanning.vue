@@ -8,39 +8,39 @@ import IconTool from '../SVG/IconTool.vue';
 
 const phriseItems = [
 	{
-		title: "Diagnostiquc et démontage",
+		title: "Diagnostic et remise en état",
 		icon: IconTool,
-		description: "Etat initial et identification des travaux.",
+		description: "Évaluation complète du véhicule et définition des travaux nécessaires pour préparer l'aventure.",
 		state: true
 	},
 	{
-		title: "Fiabilisation Mécanique",
+		title: "Fiabilisation mécanique",
 		icon: IconEngine,
-		description: "Moteur, refroidissement, freinage et trains roulants.",
+		description: "Révision des principaux organes afin d'assurer la robustesse et la fiabilité de la 205 sur plusieurs milliers de kilomètres.",
 		state: true
 	},
 	{
-		title: "Préparation raid",
+		title: "Préparation au raid",
 		icon: IconCar,
-		description: "Réhausse, snorkel, galerie et équipements de sécurité.",
+		description: "Installation des équipements nécessaires et adaptation du véhicule aux contraintes du 205 Trophée.",
 		state: true
 	},
 	{
-		title: "Communication embarquée",
+		title: "Communication et partage",
 		icon: IconCamera,
-		description: "Caméras, enregistrement, transmission et supervision.",
+		description: "Mise en place des outils de captation, de diffusion et de communication qui permettront de suivre l'aventure en direct.",
 		state: false
 	},
 	{
-		title: "Essais et validation",
+		title: "Essais et préparation finale",
 		icon: IconChecklist,
-		description: "Test routiers et contrôle de la fiabilité.",
+		description: "Validation du véhicule, tests des équipements embarqués et préparation logistique du départ.",
 		state: false
 	},
 	{
-		title: "Départ",
+		title: "Cap sur le Maroc",
 		icon: IconRaceFlag,
-		description: "Acheminement, raid et action solidaire.",
+		description: "Participation au 205 Trophée 2027, action humanitaire et découverte des pistes marocaines.",
 		state: false
 	},
 ];
@@ -118,6 +118,10 @@ const phriseItems = [
 
 .phrise .item:not(.finished)::before {
 	border: 1px solid #A79C90;
+}
+
+.description {
+	font-size: smaller;
 }
 
 @media (max-width: 1300px) {
