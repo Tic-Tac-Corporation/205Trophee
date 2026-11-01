@@ -1,8 +1,4 @@
 <script setup>
-import steps from '@/utils/preparationSteps.js';
-import ProgressBar from '../ProgressBar.vue';
-
-const moyennePreparation = Object.values(steps).reduce((acc, step) => acc + step.pct, 0) / Object.values(steps).length;
 </script>
 
 <template>
@@ -16,11 +12,6 @@ const moyennePreparation = Object.values(steps).reduce((acc, step) => acc + step
 					<br>
 					à continuer
 				</div>
-				<div class="header-subtitle">
-					<br>
-					Préparation en cours<br>
-				</div>
-				<ProgressBar :progress="moyennePreparation" :width="60" />
 			</div>
 
 		</div>

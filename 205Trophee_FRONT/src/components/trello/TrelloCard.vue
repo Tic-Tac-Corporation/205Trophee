@@ -67,19 +67,20 @@ const dueState = computed(() => {
 
 // Progression des checklists
 const checklistProgress = computed(() => {
-	let total = 0;
-	let completed = 0;
+	const items = props.checklists.flatMap(
+		checklist => checklist.checkItems || []
+	);
 
-	for (const checklist of props.checklists) {
-		const items = checklist.checkItems || [];
+	const total = items.length;
+	const completed = items.filter(
+		item => item.state === 'complete'
+	).length;
 
-		total += items.length;
-		completed += items.filter(
-			item => item.state === 'complete'
-		).length;
-	}
-
-	return { total, completed };
+	return {
+		total,
+		completed,
+		isComplete: total > 0 && completed === total,
+	};
 });
 </script>
 
@@ -120,7 +121,7 @@ const checklistProgress = computed(() => {
 						◷ {{ dueDate }}
 					</span>
 
-					<span v-if="checklistProgress.total" class="card-checklist">
+					<span v-if="checklistProgress.total" class="card-checklist checklist-progress" :class="{ 'is-complete': checklistProgress.isComplete }">
 						☑ {{ checklistProgress.completed }}/{{ checklistProgress.total }}
 					</span>
 				</div>
@@ -272,5 +273,17 @@ const checklistProgress = computed(() => {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.checklist-progress {
+    color: #6b778c;
+    background: #e4e6ea;
+    padding: 3px 7px;
+    border-radius: 4px;
+}
+
+.checklist-progress.is-complete {
+    color: #fff;
+    background: #61bd4f;
 }
 </style>
