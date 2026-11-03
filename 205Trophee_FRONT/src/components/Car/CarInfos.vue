@@ -1,10 +1,13 @@
 <script setup>
+import { ref } from 'vue';
 import IconBrush from '../SVG/IconBrush.vue';
 import IconCar from '../SVG/IconCar.vue';
 import IconCloudThinking from '../SVG/IconCloudThinking.vue';
-import IconDiamond from '../SVG/IconDiamond.vue';
 import IconDoor from '../SVG/IconDoor.vue';
+import IconEngine from '../SVG/IconEngine.vue';
 import IconTarget from '../SVG/IconTarget.vue';
+import CarDot from './CarDot.vue';
+import carDots from '@/utils/carDots.js';
 
 const carInfos = [
 	{
@@ -18,14 +21,19 @@ const carInfos = [
 		info: "5 portes",
 	},
 	{
-		title: "Finition",
-		icon: IconDiamond,
-		info: "Zénith",
+		title: "Motorisation",
+		icon: IconEngine,
+		info: "1.4 essence (TU3)",
 	},
 	{
-		title: "Couleur",
+		title: "Transmission",
+		icon: IconEngine,
+		info: "Traction avant",
+	},
+	{
+		title: "Poids",
 		icon: IconBrush,
-		info: "Gris",
+		info: "950",
 	},
 	{
 		title: "Objectif",
@@ -38,29 +46,34 @@ const carInfos = [
 		info: "Simple Fiable et réparable",
 	},
 ];
+
+const selectedDotID = ref(0);
+
+const selectDot = (id) => {
+	if (id === selectedDotID.value) return selectedDotID.value = 0;
+	selectedDotID.value = id
+};
 </script>
 
 <template>
 	<div class="main-container text-padding">
 		<div class="text-container">
 			<h2>
-				Une voiture familiale<br>
-				devenue projet d'aventure
+				Une préparation pensée pour le RAID
 			</h2>
 			<p>
-				Cette Peugeot 205 n'a pas été choisi au hasard.<br>
-				Ancienne voiture du grand-père de l'un des memmbres<br>
-				de l'équipage, elle a été récupéré avec l'envie de<br>
-				préserver son histoire tout en lui offrant une nouvelle destination.<br>
-				<br>
-				Notre objectif n'est pas d'en faire un prototype de<br>
-				compétition, mais de construire une voiture simple,<br>
-				fiable et cohérente avec les exigences du raid.
+				Notre objectif n'est pas de transformer cette Peugeot 205 en véhicule
+				de compétition, mais de la préparer pour affronter le 205 Trophée dans
+				les meilleurs conditions. Chaque modification répond à un besoin
+				concret : fiabilité, sécurité, autonomie ou confort, tout en conservant
+				une mécanisque simple et réparable.
 			</p>
 		</div>
 
 		<div class="image-container">
-			<img src="@/assets/205.jpg" alt="Peugeot 205 Gris Zénith" />
+			<img src="@/assets/205_profil.png" alt="Peugeot 205 Gris Zénith" />
+
+			<CarDot v-for="dot in carDots" :title="dot.title" :description="dot.descirption" :x="dot.x" :y="dot.y" :selected="selectedDotID === dot.id" @click="selectDot(dot.id)" />
 		</div>
 
 		<div class="infos-container">
@@ -80,15 +93,19 @@ const carInfos = [
 	display: flex;
 	gap: 2em;
 	justify-content: center;
+	align-items: center;
+}
+
+.image-container {
+	position: relative;
 }
 
 .image-container img {
-	max-width: 470px
+	width: 800px;
+	max-width: 80vw;
 }
 
 .infos-container {
-	position: relative;
-	bottom: 4em;
 	padding: 1em;
 	-webkit-box-shadow: 0px 0px 15px -5px #000000;
 	box-shadow: 0px 0px 15px -5px #000000;
@@ -97,22 +114,18 @@ const carInfos = [
 	background-color: white;
 }
 
-.infos-container > div {
+.infos-container>div {
 	display: flex;
 	align-items: center;
 	gap: 1em;
 }
 
-.infos-container h4 ~ div {
+.infos-container h4~div {
 	position: relative;
 	top: -0.4em;
 }
 
-@media (max-width: 1370px) {
-	.image-container {
-		display: none;
-	}
-}
+
 
 @media (max-width: 870px) {
 	.main-container {
