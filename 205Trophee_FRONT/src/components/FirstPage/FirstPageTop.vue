@@ -9,7 +9,7 @@ import PresentationRally from '../Pilotes/PresentationRally.vue';
 		</div>
 
 		<div class="logo-container">
-			<img src="@/assets/logo2.png" class="team-logo" alt="LOGO">
+			<img src="@/assets/logo.png" class="team-logo" alt="LOGO">
 		</div>
 
 		<div class="team-presentation-container">
@@ -39,9 +39,9 @@ video {
 
 .logo-container {
 	width: 80%;
-	max-width: 1000px;
+	max-width: 40vh;
 	position: absolute;
-	top: 30%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	display: flex;
@@ -49,9 +49,6 @@ video {
 	flex-direction: column;
 }
 
-img.team-logo {
-	max-width: 1000px;
-}
 
 .team-presentation-container {
 	position: absolute;
