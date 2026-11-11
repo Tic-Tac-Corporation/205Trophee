@@ -34,7 +34,7 @@ const items = [
 				<p>{{ item.title }}</p>
 			</div>
 
-			<button>Nous proposer votre aide</button>
+			<a href="#form">Nous proposer votre aide</a>
 		</div>
 	</div>
 </template>
@@ -58,7 +58,7 @@ const items = [
 	width: fit-content;
 }
 
-button {
+a {
 	padding: 0.7em 1em;
 	border: none;
 	background-color: var(--color-orange);
@@ -66,5 +66,7 @@ button {
 	text-transform: uppercase;
 	border-radius: 0.5em;
 	cursor: pointer;
+	display: flex;
+	align-items: center;
 }
 </style>

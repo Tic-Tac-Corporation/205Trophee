@@ -1,4 +1,6 @@
 <script setup>
+import ContactFrame from '@/components/Contact/ContactFrame.vue';
+import SponsorForm from '@/components/Contact/SponsorForm.vue';
 import SponsorPlans from '@/components/Sponsors/SponsorPlans.vue';
 import SponsorsAccompagnement from '@/components/Sponsors/SponsorsAccompagnement.vue';
 import SponsorsFinancement from '@/components/Sponsors/SponsorsFinancement.vue';
@@ -22,8 +24,11 @@ import SponsorsWhy from '@/components/Sponsors/SponsorsWhy.vue';
 		<SponsorsWhy />
 		<SponsorPlans />
 		<SponsorsOtherPlans />
+		<ContactFrame title="Devenir sponsor" id="form">
+			<SponsorForm />
+		</ContactFrame>
+		<br>
 	</main>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

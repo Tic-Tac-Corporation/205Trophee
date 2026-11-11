@@ -22,9 +22,9 @@ import IconMail from '../SVG/IconMail.vue';
 				</div>
 				<div class="btns">
 					<br>
-					<button class="btn-orange">
+					<a href="#form" class="btn-orange">
 						Devenir partenaire
-					</button>
+					</a>
 					<button>
 						<IconDownload :size="20" fill="#FFFFFF" />
 						<div>Télécharger le dossier</div>
@@ -95,7 +95,7 @@ header .header-title .btns {
 	max-width: 330px;
 }
 
-button {
+button, a {
 	padding: 0.7em 1em;
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	background-color: transparent;
@@ -110,7 +110,7 @@ button {
 	transition: all 0.1s ease-in-out;
 }
 
-button.btn-orange {
+a.btn-orange {
 	background-color: var(--color-orange);
 	border: 1px solid transparent;
 	justify-content: center;

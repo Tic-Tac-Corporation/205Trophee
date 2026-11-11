@@ -9,17 +9,6 @@ const router = createRouter({
 			name: 'home',
 			component: HomeView,
 		},
-		// PILOTES
-		{
-			path: '/pilote/QG',
-			name: 'Quentin',
-			component: () => import('../views/Pilotes/QG.vue'),
-		},
-		{
-			path: '/pilote/QG',
-			name: 'Killian',
-			component: () => import('../views/Pilotes/BK.vue'),
-		},
 		// PAGES
 		{
 			path: '/project',
@@ -40,6 +29,12 @@ const router = createRouter({
 			path: '/sponsors',
 			name: 'Sponsors',
 			component: () => import('../views/SponsorsView.vue'),
+		},
+
+		{
+			path: '/contact',
+			name: 'Contact',
+			component: () => import('../views/Contact.vue'),
 		},
 	],
 	scrollBehavior(to, from, savedPosition) {

@@ -14,6 +14,7 @@ import FollowItem from './FollowItem.vue';
 		<div class="links">
 			<h2 class="russo-one">Liens</h2>
 			<a href="https://205trophee.com/">Site Officiel</a>
+			<RouterLink to="/contact">Nous Contacter</RouterLink>
 		</div>
 
 		<div class="follow">
