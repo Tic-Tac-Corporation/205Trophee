@@ -1,1 +1,0 @@
-import{_ as e,i as t,u as n}from"./index-C69J04r2.js";var r={};function i(t,r){return e(),n(`main`,null,` QUENTIN GONTIER `)}var a=t(r,[[`render`,i]]);export{a as default};
