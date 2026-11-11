@@ -1,0 +1,26 @@
+services:
+  mongodb:
+    image: mongo:8
+    container_name: contact-mongodb
+
+    restart: unless-stopped
+
+    ports:
+      - "27017:27017"
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+
+    volumes:
+      - mongodb_data:/data/db
+
+    networks:
+      - contact-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  contact-network:
+    driver: bridge
