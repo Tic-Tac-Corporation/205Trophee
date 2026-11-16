@@ -7,27 +7,21 @@ const props = defineProps({
 	lastname: {
 		type: String,
 		required: true,
-	},
-	link: {
-		type: String,
-		required: true,
 	}
 });
 </script>
 
 <template>
-	<RouterLink :to="`/pilote/${link}`" class="no-link">
-		<div class="pilote">
-			<div class="first-line">
-				<div class="pilote-firstname">{{ firstname }}</div>
-			</div>
-
-			<div class="second-line">
-				<img class="flag" src="@/assets/flag_fr.png" alt="[FR]">
-				<div class="pilote-lastname">{{ lastname }}</div>
-			</div>
+	<div class="pilote">
+		<div class="first-line">
+			<div class="pilote-firstname">{{ firstname }}</div>
 		</div>
-	</RouterLink>
+
+		<div class="second-line">
+			<img class="flag" src="@/assets/flag_fr.png" alt="[FR]">
+			<div class="pilote-lastname">{{ lastname }}</div>
+		</div>
+	</div>
 </template>
 
 <style scoped>

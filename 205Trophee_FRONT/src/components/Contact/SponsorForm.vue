@@ -1,20 +1,23 @@
 <script setup>
-import { FloatLabel, InputText, Select, Textarea, Button } from 'primevue';
 import { ref } from 'vue';
+import CustomInput from '../Form/customInput.vue';
+import CustomTextarea from '../Form/customTextarea.vue';
+import CustomSelect from '../Form/customSelect.vue';
+import CustomSubmit from '../Form/customSubmit.vue';
 
 const API_URL = `${import.meta.env.VITE_API_URL}/api/contact`
 
 const successMessage = ref('');
 const errorMessage = ref('');
 const sponsorshipTypes = ref([
-	{ label: "Financier (Partenaire)" },
-	{ label: "Financier (Partenaire Premium)" },
-	{ label: "Financier (Partenaire Principal)" },
-	{ label: "Prêt de matériel" },
-	{ label: "Coup de main" },
-	{ label: "Relais du projet" },
-	{ label: "Don de fournitures" },
-	{ label: "Autre" },
+	"Financier (Partenaire)",
+	"Financier (Partenaire Premium)",
+	"Financier (Partenaire Principal)",
+	"Prêt de matériel",
+	"Coup de main",
+	"Relais du projet",
+	"Don de fournitures",
+	"Autre",
 ]);
 
 const form = ref({
@@ -65,9 +68,9 @@ const submitForm = async () => {
 				subject: "Demande de partenariat",
 				message: form.value.message,
 				details: {
-					company: form.value.company,
-					website: form.value.website,
-					sponsorshipType: form.value.sponsorshipType
+					company: form.value.details.company,
+					website: form.value.details.website,
+					sponsorshipType: form.value.details.sponsorshipType
 				}
 			})
 		})
@@ -109,56 +112,18 @@ const submitForm = async () => {
 
 	<form>
 		<div class="flex">
-			<FloatLabel>
-				<InputText id="firstname" v-model="form.firstname" size="large" fluid required />
-				<label for="firstname">Nom</label>
-			</FloatLabel>
-
-			<FloatLabel>
-				<InputText id="lastname" v-model="form.lastname" size="large" fluid required />
-				<label for="lastname">Prénom</label>
-			</FloatLabel>
+			<CustomInput label="Nom" v-model="form.firstname" />
+			<CustomInput label="Prénom" v-model="form.lastname" />
 		</div>
-
-		<br>
-
-		<FloatLabel>
-			<InputText id="email" v-model="form.email" size="large" fluid required />
-			<label for="email">Email</label>
-		</FloatLabel>
-
-		<br>
-
-		<FloatLabel>
-			<Textarea id="text" v-model="form.message" rows="5" cols="30" style="resize: none" fluid />
-			<label for="text">Expliquez votre sponsorship en quelques mots</label>
-		</FloatLabel>
-
-		<br>
-
+		<CustomInput label="Email" v-model="form.email" />
+		<CustomTextarea label="Votre demande" v-model="form.message" />
 		<div class="flex">
-			<FloatLabel>
-				<InputText id="details.company" v-model="form.details.company" size="large" fluid />
-				<label for="details.company">Entreprise</label>
-			</FloatLabel>
-
-			<FloatLabel>
-				<InputText id="details.website" v-model="form.details.website" size="large" fluid />
-				<label for="details.website">Site Internet</label>
-			</FloatLabel>
+			<CustomInput label="Entreprise" v-model="form.details.company" />
+			<CustomInput label="Site Internet" v-model="form.details.website" />
 		</div>
-
+		<CustomSelect label="Type de sponsor" :datas="sponsorshipTypes" v-model="form.details.sponsorshipType" />
 		<br>
-
-		<FloatLabel class="w-full md:w-56">
-			<Select v-model="form.details.sponsorshipType" inputId="sponsorshipType" :options="sponsorshipTypes"
-				optionLabel="label" optionValue="label" fluid required />
-			<label for="sponsorshipType">Type de sponsor</label>
-		</FloatLabel>
-
-		<br>
-
-		<Button @click="submitForm">Soumettre la demande</Button>
+		<CustomSubmit label="Soumettre la demande" type="button" @click="submitForm" />
 	</form>
 </template>
 

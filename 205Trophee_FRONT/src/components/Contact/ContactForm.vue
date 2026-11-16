@@ -1,19 +1,22 @@
 <script setup>
-import { FloatLabel, InputText, Select, Textarea, Button } from 'primevue';
 import { ref } from 'vue';
+import CustomInput from '../Form/customInput.vue';
+import CustomSelect from '../Form/customSelect.vue';
+import CustomTextarea from '../Form/customTextarea.vue';
+import CustomSubmit from '../Form/customSubmit.vue';
 
 const API_URL = `${import.meta.env.VITE_API_URL}/api/contact`
 
 const successMessage = ref('');
 const errorMessage = ref('');
 const subjects = ref([
-	{ label: "Demande d'information générale" },
-	{ label: "Partenariat / Sponsoring" },
-	{ label: "Boutique / Merchandising" },
-	{ label: "Le 205 Trophée 2027" },
-	{ label: "Presse / Communication" },
-	{ label: "Proposition de collaboration" },
-	{ label: "Autre demande" },
+	"Demande d'information générale",
+	"Partenariat / Sponsoring",
+	"Boutique / Merchandising",
+	"Le 205 Trophée 2027",
+	"Presse / Communication",
+	"Proposition de collaboration",
+	"Autre demande",
 ]);
 
 const form = ref({
@@ -83,44 +86,15 @@ const submitForm = async () => {
 	<div class="error-msg" v-if="errorMessage">{{ errorMessage }}</div>
 	<div class="success-msg" v-if="successMessage">{{ successMessage }}</div>
 
-	<br>
-
 	<form>
 		<div class="flex">
-			<FloatLabel>
-				<InputText id="firstname" v-model="form.firstname" size="large" fluid required />
-				<label for="firstname">Nom</label>
-			</FloatLabel>
-
-			<FloatLabel>
-				<InputText id="lastname" v-model="form.lastname" size="large" fluid required />
-				<label for="lastname">Prénom</label>
-			</FloatLabel>
+			<CustomInput label="Nom" v-model="form.firstname" />
+			<CustomInput label="Prénom" v-model="form.lastname" />
 		</div>
-
-		<br>
-
-		<FloatLabel>
-			<InputText id="email" v-model="form.email" size="large" fluid required />
-			<label for="email">Email</label>
-		</FloatLabel>
-
-		<br>
-
-		<FloatLabel class="w-full md:w-56">
-			<Select v-model="form.subject" inputId="subject" :options="subjects" optionLabel="label" optionValue="label"
-				fluid required />
-			<label for="subject">Sujet</label>
-		</FloatLabel>
-
-		<br>
-
-		<FloatLabel>
-			<Textarea id="text" v-model="form.message" rows="5" cols="30" style="resize: none" fluid />
-			<label for="text">Votre demande</label>
-		</FloatLabel>
-
-		<Button @click="submitForm">Soumettre la demande</Button>
+		<CustomInput label="Email" v-model="form.email" />
+		<CustomSelect label="Sujet" :datas="subjects" v-model="form.subject" />
+		<CustomTextarea label="Votre demande" v-model="form.message" />
+		<CustomSubmit label="Soumettre la demande" type="button" @click="submitForm" />
 	</form>
 </template>
 
@@ -133,6 +107,7 @@ const submitForm = async () => {
 @media (max-width: 1024px) {
 	.flex {
 		flex-direction: column;
+		gap: 0;
 	}
 }
 

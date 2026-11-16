@@ -13,8 +13,8 @@ import PresentationRally from '../Pilotes/PresentationRally.vue';
 		</div>
 
 		<div class="team-presentation-container">
-			<PresentationRally firstname="Quentin" lastname="Gontier" link="QG" />
-			<PresentationRally firstname="Killian" lastname="Bernard" link="BK" />
+			<PresentationRally firstname="Quentin" lastname="Gontier" />
+			<PresentationRally firstname="Killian" lastname="Bernard" />
 		</div>
 	</div>
 </template>
