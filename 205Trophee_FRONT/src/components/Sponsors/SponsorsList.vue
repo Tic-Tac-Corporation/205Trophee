@@ -8,7 +8,6 @@ import IconHandshake from '../SVG/IconHandshake.vue';
 		<div class="title-container">
 			<h2>Les <span class="text-orange">premiers partenaires</span> <br>de l'aventure</h2>
 			<div class="orange">Et si la première collaboration était la vôtre ?</div>
-			<button class="orange">Echangeons sur le projet</button>
 		</div>
 
 		<div class="list-container">
@@ -46,19 +45,6 @@ import IconHandshake from '../SVG/IconHandshake.vue';
 div.orange {
 	color: var(--color-orange);
 	font-weight: bold;
-}
-
-button {
-	padding: 0.7em 1em;
-	border: none;
-	background-color: var(--color-orange);
-	color: white;
-	border-radius: 0.5em;
-	display: flex;
-	align-items: center;
-	gap: 0.7em;
-	text-transform: uppercase;
-	cursor: pointer;
 }
 
 .list-container {

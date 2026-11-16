@@ -33,8 +33,6 @@ const items = [
 				<component :is="item.icon" :size="30" fill="var(--color-text)" />
 				<p>{{ item.title }}</p>
 			</div>
-
-			<a href="#form">Nous proposer votre aide</a>
 		</div>
 	</div>
 </template>

@@ -29,10 +29,6 @@ import IconMail from '../SVG/IconMail.vue';
 						<IconDownload :size="20" fill="#FFFFFF" />
 						<div>Télécharger le dossier</div>
 					</button>
-					<button>
-						<IconMail :size="20" fill="#FFFFFF" />
-						<div>Nous contacter</div>
-					</button>
 				</div>
 			</div>
 
