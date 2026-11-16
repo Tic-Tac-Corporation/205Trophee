@@ -13,7 +13,7 @@ const carInfos = [
 	{
 		title: "Modèle",
 		icon: IconCar,
-		info: "Peugeot 205 phase 2",
+		info: "Peugeot 205 Zénith",
 	},
 	{
 		title: "Carrosserie",
@@ -33,7 +33,7 @@ const carInfos = [
 	{
 		title: "Poids",
 		icon: IconBrush,
-		info: "950",
+		info: "840 Kg",
 	},
 	{
 		title: "Objectif",
@@ -123,11 +123,12 @@ const selectDot = (id) => {
 .infos-container h4~div {
 	position: relative;
 	top: -0.4em;
+	white-space: preserve nowrap;
 }
 
 
 
-@media (max-width: 870px) {
+@media (max-width: 1450px) {
 	.main-container {
 		flex-wrap: wrap;
 	}

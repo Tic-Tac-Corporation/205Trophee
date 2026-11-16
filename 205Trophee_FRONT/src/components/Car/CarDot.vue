@@ -27,22 +27,28 @@ const emit = defineEmits(['click']);
 </script>
 
 <template>
-	<div class="dot" :style="{ left: `${x}%`, top: `${y}%` }" @click="emit('click')">
-		+
+	<div class="dot-container" :style="{ left: `${x}%`, top: `${y}%` }" :class="{ left: x > 40 }">
+		<div class="dot" @click="emit('click')">
+			+
+		</div>
+		<div class="dot-content" v-if="selected" @click="emit('click')">
+			<h4>{{ title }}</h4>
+			<p>{{ description }}</p>
+		</div>
 	</div>
-	<div class="dot-content" v-if="selected" @click="emit('click')">
-		<h4>{{ title }}</h4>
-		<p>{{ description }}</p>
-	</div>
+
 </template>
 
 <style scoped>
+.dot-container {
+	position: absolute;
+}
+
 .dot {
 	background: var(--color-orange);
 	border-radius: 100%;
 	width: 17px;
 	height: 17px;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -53,11 +59,8 @@ const emit = defineEmits(['click']);
 }
 
 .dot-content {
-	position: absolute;
+	position: relative;
 	width: fit-content;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
 	border: 1px solid var(--color-orange);
 	border-radius: 0.7em;
 	background-color: rgba(255, 255, 255, 0.5);
@@ -65,5 +68,10 @@ const emit = defineEmits(['click']);
 	padding: 0.7em;
 	font-size: smaller;
 	backdrop-filter: blur(3px);
+	min-width: 240px;
+}
+
+.dot-container.left .dot-content {
+	right: 240px;
 }
 </style>
