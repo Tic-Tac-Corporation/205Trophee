@@ -1,22 +1,22 @@
 <script setup>
 import PhotoCarrousel from '../Carrousel/PhotoCarrousel.vue';
+import photoCarrouselList from '@/utils/photoCarrousel.js';
 
-const photoModules = import.meta.glob('@/assets/*.{jpg,jpeg,png,webp}', {
+const photoModules = import.meta.glob('/src/assets/carrousel/*.jpeg', {
     eager: true,
     import: 'default',
 });
 
-const photos = [
-    '205.jpg',
-    '205_travaux.jpeg',
-    '205_table_orientation.jpg',
-    '205_profil.png',
-    '205_objectif.webp',
-    '205_avant_travaux.jpg',
-].map((filename, index) => ({
-    src: photoModules[`/src/assets/${filename}`],
-    alt: `Photo ${index + 1}`,
-}));
+const photos = photoCarrouselList.map((filename, index) => {
+    const imagePath = Object.keys(photoModules).find(path =>
+        path.endsWith(`/${filename}`)
+    );
+
+    return {
+        src: imagePath ? photoModules[imagePath] : null,
+        alt: `Photo ${index + 1}`,
+    };
+}).filter(photo => photo.src);
 </script>
 
 <template>
