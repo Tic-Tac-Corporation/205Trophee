@@ -1,7 +1,7 @@
 <script setup>
-import IconCar from '../SVG/IconCar.vue';
 import IconDownload from '../SVG/IconDownload.vue';
-import IconMail from '../SVG/IconMail.vue';
+
+import dossier from '@/assets/Dossier-final-v2.pdf';
 
 </script>
 
@@ -25,10 +25,10 @@ import IconMail from '../SVG/IconMail.vue';
 					<a href="#form" class="btn-orange">
 						Devenir partenaire
 					</a>
-					<button>
+					<a :href="dossier" download="Dossier-final-v2.pdf">
 						<IconDownload :size="20" fill="#FFFFFF" />
 						<div>Télécharger le dossier</div>
-					</button>
+					</a>
 				</div>
 			</div>
 
@@ -91,7 +91,8 @@ header .header-title .btns {
 	max-width: 330px;
 }
 
-button, a {
+button,
+a {
 	padding: 0.7em 1em;
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	background-color: transparent;
