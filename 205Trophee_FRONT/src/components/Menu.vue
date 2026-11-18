@@ -68,7 +68,7 @@ header .menu-icon {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1350px) {
 	header {
 		margin: 0 5em 0 5em;
 	}
@@ -90,7 +90,7 @@ header .menu-icon {
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1350px) {
 	header {
 		padding: 0;
 		width: calc(100vw - 1.7em);
