@@ -8,6 +8,7 @@ import rateLimit from 'express-rate-limit';
 
 import connectDatabase from './config/database.js';
 import contactRoutes from './routes/contactRoutes.js';
+import productRoutes from './routes/productRoutes.js';
 
 const app = express();
 
@@ -40,6 +41,7 @@ app.use('/api/', limiter);
 
 // Routes API
 app.use('/api/contact', contactRoutes);
+app.use('/api/products', productRoutes);
 
 // Démarrage du serveur
 const startServer = async () => {

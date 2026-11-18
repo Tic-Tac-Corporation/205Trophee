@@ -1,0 +1,106 @@
+[
+	{
+		"name": "T-shirt officiel 205 Trophée 2027",
+		"slug": "t-shirt-officiel-205-trophee-2027",
+		"description": "T-shirt officiel aux couleurs du 205 Trophée 2027.",
+		"category": "vetements",
+		"price": 2500,
+		"images": [
+			"https://monsite.fr/images/tshirt-face.jpg",
+			"https://monsite.fr/images/tshirt-dos.jpg"
+		],
+		"variants": [
+			{
+				"size": "S",
+				"color": "Noir"
+			},
+			{
+				"size": "M",
+				"color": "Noir"
+			},
+			{
+				"size": "L",
+				"color": "Noir"
+			},
+			{
+				"size": "XL",
+				"color": "Noir"
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Casquette 205 Trophée",
+		"slug": "casquette-205-trophee",
+		"description": "Casquette officielle brodée aux couleurs du 205 Trophée.",
+		"category": "accessoires",
+		"price": 1800,
+		"images": [
+			"https://monsite.fr/images/casquette.jpg"
+		],
+		"variants": [
+			{
+				"size": "Unique",
+				"color": "Noir"
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Autocollant officiel 205 Trophée",
+		"slug": "autocollant-officiel-205-trophee",
+		"description": "Autocollant officiel du 205 Trophée 2027.",
+		"category": "goodies",
+		"price": 300,
+		"images": [
+			"https://monsite.fr/images/autocollant.jpg"
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Sweat 205 Trophée",
+		"slug": "sweat-205-trophee",
+		"description": "Sweat confortable aux couleurs de l'aventure 205 Trophée.",
+		"category": "vetements",
+		"price": 4500,
+		"images": [
+			"https://monsite.fr/images/sweat-face.jpg",
+			"https://monsite.fr/images/sweat-dos.jpg"
+		],
+		"variants": [
+			{
+				"size": "S",
+				"color": "Noir"
+			},
+			{
+				"size": "M",
+				"color": "Noir"
+			},
+			{
+				"size": "L",
+				"color": "Noir"
+			},
+			{
+				"size": "XL",
+				"color": "Noir"
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Porte-clés 205 Trophée",
+		"slug": "porte-cles-205-trophee",
+		"description": "Porte-clés aux couleurs du 205 Trophée 2027.",
+		"category": "goodies",
+		"price": 600,
+		"images": [
+			"https://monsite.fr/images/porte-cles.jpg"
+		],
+		"isActive": true,
+		"isFeatured": false
+	}
+]
