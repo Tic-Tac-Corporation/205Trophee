@@ -2,7 +2,7 @@
 import PhotoCarrousel from '../Carrousel/PhotoCarrousel.vue';
 import photoCarrouselList from '@/utils/photoCarrousel.js';
 
-const photoModules = import.meta.glob('/src/assets/carrousel/*.jpeg', {
+const photoModules = import.meta.glob('/src/assets/carrousel/*.{jpg,jpeg,png,webp}', {
     eager: true,
     import: 'default',
 });

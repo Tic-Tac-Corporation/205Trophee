@@ -5,11 +5,10 @@ import Card from '../SecondPage/Card.vue';
 
 <template>
 	<div class="container">
-		<h1>OUI</h1>
 		<div class="cards-container">
-			<Card title="Le Projet" backgroundUrl="205trophee.jpg" link="/project" />
-			<Card title="La Préparation" backgroundUrl="205.jpg" link="/car" />
-			<Card title="Le Système de Diffusion" backgroundUrl="communication.jpg" link="/com" />
+			<Card title="Le Projet" backgroundUrl="le_projet.jpg" link="/project" />
+			<Card title="La Préparation" backgroundUrl="preparation.jpg" link="/car" />
+			<Card title="Le Système de Diffusion" backgroundUrl="IMG_4153.jpeg" link="/com" />
 		</div>
 	</div>
 </template>

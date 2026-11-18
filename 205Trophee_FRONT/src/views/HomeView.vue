@@ -8,8 +8,8 @@ import Odometer from '@/components/FirstPage/Odometer.vue';
 <template>
 	<main class="MainView">
 		<FirstPageTop />
-		<FirstPageMiddle1 />
 		<Odometer future-date="2027-05-02T14:00:00" />
+		<FirstPageMiddle1 />
 		<FirstPageBottom />
 	</main>
 </template>

@@ -24,12 +24,12 @@ const bgStyle = computed(() => ({
 
 <template>
 	<RouterLink class="card-container no-link" :to="link">
+		<h2 class="link">{{ title }}</h2>
 		<div class="background" :style="bgStyle">
 			<div class="title">
 				<span>{{ title }}</span>
 			</div>
 		</div>
-		<div class="link">{{ title }}</div>
 	</RouterLink>
 </template>
 
@@ -78,8 +78,8 @@ div.title span {
 	text-align: center;
 }
 
-div.link {
-	font-size: x-large;
+.link {
+	text-align: center;
 }
 
 .card-container:hover div.title {
