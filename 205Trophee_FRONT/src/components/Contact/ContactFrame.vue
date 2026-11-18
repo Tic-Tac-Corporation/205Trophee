@@ -14,7 +14,7 @@ const name = ref("");
 <template>
 	<div class="contact-frame-main-container">
 		<div class="contact-frame-container">
-			<h2>{{ title }}</h2>
+			<h1>{{ title }}</h1>
 			<br>
 			<slot />
 		</div>
@@ -36,6 +36,10 @@ const name = ref("");
 	background-color: var(--color-background);
 	width: 50vw;
 	max-width: 90vw;
+}
+
+h1 {
+	text-align: center;
 }
 
 @media (max-width: 1024px) {

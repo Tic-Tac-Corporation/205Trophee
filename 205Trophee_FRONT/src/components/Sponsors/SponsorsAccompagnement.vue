@@ -14,16 +14,6 @@ const items = [
 		icon: IconTool,
 		title: "Soutien matériel",
 		text: "Fournir des pièces, des équipements, des outils ou des consommables."
-	},
-	{
-		icon: IconTruck,
-		title: "Soutien logistique",
-		text: "Contribuer au transport, à l'impression, au stockage ou à l'organisation."
-	},
-	{
-		icon: IconSpeaker,
-		title: "Relais de communication",
-		text: "Partager le projet et contribuer à sa visibilité."
 	}
 ];
 </script>
@@ -51,7 +41,7 @@ const items = [
 <style scoped>
 .items-container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	gap: 1em;
 }
 
