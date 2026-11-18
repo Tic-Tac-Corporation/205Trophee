@@ -25,7 +25,7 @@ header {
 }
 
 header .header-background {
-	background-image: url('@/assets/projet_header.webp');
+	background-image: url('@/assets/preparation_header.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
