@@ -36,6 +36,11 @@ const router = createRouter({
 			name: 'Contact',
 			component: () => import('../views/Contact.vue'),
 		},
+		{
+			path: '/shop',
+			name: 'Shop',
+			component: () => import('../views/ShopView.vue'),
+		},
 	],
 	scrollBehavior(to, from, savedPosition) {
 		// always scroll to top
