@@ -37,8 +37,8 @@ const bgStyle = computed(() => ({
 .card-container {
 	min-width: 300px;
 	width: 30%;
-	max-height: 70vh;
-	height: 70vh;
+	max-height: 50vh;
+	height: 50vh;
 	cursor: pointer;
 }
 
@@ -46,8 +46,8 @@ const bgStyle = computed(() => ({
 	.card-container {
 		max-width: 70vw;
 		width: 100%;
-		max-height: 70vh;
-		height: 70vh;
+		max-height: 50vh;
+		height: 50vh;
 	}
 }
 
@@ -55,7 +55,7 @@ div.background {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: calc(70vh - 4em);
+	height: calc(50vh - 4em);
 	border-radius: 0.7em;
 	overflow: hidden;
 }

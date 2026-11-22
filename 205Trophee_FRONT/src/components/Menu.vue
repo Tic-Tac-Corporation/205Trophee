@@ -25,7 +25,7 @@ const triggerMenu = () => {
 				<RouterLink to="/car">La Préparation</RouterLink>
 				<RouterLink to="/com">Le Système de Diffusion</RouterLink>
 				<RouterLink to="/sponsors">Sponsors</RouterLink>
-				<RouterLink to="/">Nous Aider</RouterLink>
+				<RouterLink to="/shop">La boutique</RouterLink>
 			</div>
 		</div>
 	</header>

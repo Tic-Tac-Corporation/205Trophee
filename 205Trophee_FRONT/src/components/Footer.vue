@@ -23,6 +23,8 @@ import FollowItem from './FollowItem.vue';
 				<FollowItem title="Instagram" />
 				<FollowItem title="Trello" />
 				<FollowItem title="Twitch" />
+				<FollowItem title="Youtube" />
+				<FollowItem title="Facebook" />
 			</div>
 		</div>
 	</footer>

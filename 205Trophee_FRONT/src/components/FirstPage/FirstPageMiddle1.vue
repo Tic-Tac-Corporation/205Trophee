@@ -10,6 +10,11 @@ import Card from '../SecondPage/Card.vue';
 			<Card title="La Préparation" backgroundUrl="preparation.jpg" link="/car" />
 			<Card title="Le Système de Diffusion" backgroundUrl="IMG_4153.jpeg" link="/com" />
 		</div>
+        <br>
+        <div class="cards-container">
+			<Card title="Les Sponsors" backgroundUrl="le_projet.jpg" link="/sponsors" />
+			<Card title="La Boutique" backgroundUrl="preparation.jpg" link="/shop" />
+		</div>
 	</div>
 </template>
 
