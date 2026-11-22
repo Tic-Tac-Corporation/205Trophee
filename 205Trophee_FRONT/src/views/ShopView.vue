@@ -1,8 +1,15 @@
 <script setup>
 import ProductCard from '@/components/shop/ProductCard.vue';
+import { getProducts } from '@/utils/productApi';
+import { onBeforeMount, ref } from 'vue';
 
-import ProductsList from '../../../205Trophee_API/products.json';
+const ProductsList = ref([]);
 
+onBeforeMount(() => {
+	getProducts().then((products) => {
+		ProductsList.value = products;
+	});
+})
 </script>
 
 <template>

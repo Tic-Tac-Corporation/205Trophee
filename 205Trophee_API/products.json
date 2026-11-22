@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Casquette Logo 205 PAYSAGE",
-		"slug": "casquette-205-PAYSAGE-BF25",
+		"slug": "casquette-205-paysage-bf25",
 		"description": "Casquette officielle floqués 100% coton",
 		"category": "headwear",
 		"price": 29.99,
@@ -34,7 +34,7 @@
 	},
 	{
 		"name": "Casquette Logo 205 DTF",
-		"slug": "casquette-205-DTF-BF25",
+		"slug": "casquette-205-dtf-bf25",
 		"description": "Casquette officielle floqués 100% coton",
 		"category": "headwear",
 		"price": 29.99,
@@ -67,7 +67,7 @@
 	},
 	{
 		"name": "Autocollant officiel 205 DTF",
-		"slug": "autocollant-officiel-205-DTF",
+		"slug": "autocollant-officiel-205-dtf",
 		"description": "Autocollant officiel du 205 Trophée 2027.",
 		"category": "goodies",
 		"price": 0.50,
@@ -77,7 +77,7 @@
 	},
 	{
 		"name": "Autocollant officiel 205 PAYSAGE",
-		"slug": "autocollant-officiel-205-PAYSAGE",
+		"slug": "autocollant-officiel-205-paysage",
 		"description": "Autocollant officiel du 205 Trophée 2027.",
 		"category": "goodies",
 		"price": 0.50,
@@ -87,7 +87,7 @@
 	},
 	{
 		"name": "Bonnet coton Logo 205 DTF",
-		"slug": "bonnet-205-DTF-BF050",
+		"slug": "bonnet-205-dtf-bf050",
 		"description": "Bonnet officiel logo DTF 100% coton",
 		"category": "headwear",
 		"price": 29.99,
@@ -115,7 +115,7 @@
 	},
 	{
 		"name": "Bonnet coton Logo 205 PAYSAGE",
-		"slug": "bonnet-205-PAYSAGE-BF050",
+		"slug": "bonnet-205-paysage-bf050",
 		"description": "Bonnet officiel logo PAYSAGE 100% coton",
 		"category": "headwear",
 		"price": 29.99,
@@ -143,7 +143,7 @@
 	},
 	{
 		"name": "Bonnet synthétique Logo 205 DTF",
-		"slug": "bonnet-205-DTF-AT703",
+		"slug": "bonnet-205-dtf-at703",
 		"description": "Bonnet officiel logo DTF 100% synthétique",
 		"category": "headwear",
 		"price": 29.99,
@@ -176,7 +176,7 @@
 	},
 	{
 		"name": "Bonnet synthétique Logo 205 PAYSAGE",
-		"slug": "bonnet-205-PAYSAGE-AT703",
+		"slug": "bonnet-205-paysage-at703",
 		"description": "Bonnet officiel logo PAYSAGE 100% synthétique",
 		"category": "headwear",
 		"price": 29.99,
@@ -209,7 +209,7 @@
 	},
 	{
 		"name": "Bonnet coton POMPON Logo 205 DTF",
-		"slug": "bonnet-POMPON-205-DTF-BF450N",
+		"slug": "bonnet-pompon-205-dtf-bf450n",
 		"description": "Bonnet à pompon officiel logo DTF 100% coton",
 		"category": "headwear",
 		"price": 29.99,
@@ -227,7 +227,7 @@
 	},
 	{
 		"name": "Bonnet coton POMPON Logo 205 PAYSAGE",
-		"slug": "bonnet-POMPON-205-PAYSAGE-BF450N",
+		"slug": "bonnet-pompon-205-paysage-bf450n",
 		"description": "Bonnet à pompon officiel logo PAYSAGE 100% coton",
 		"category": "headwear",
 		"price": 29.99,
@@ -245,7 +245,7 @@
 	},
 	{
 		"name": "Bonnet POMPON synthétique Logo 205 DTF",
-		"slug": "bonnet-205-POMPON-DTF-AT309",
+		"slug": "bonnet-205-pompon-dtf-at309",
 		"description": "Bonnet à pompon officiel logo DTF 100% synthétique",
 		"category": "headwear",
 		"price": 29.99,
@@ -278,7 +278,7 @@
 	},
 	{
 		"name": "Bonnet POMPON synthétique Logo 205 PAYSAGE",
-		"slug": "bonnet-205-POMPON-PAYSAGE-AT309",
+		"slug": "bonnet-205-pompon-paysage-at309",
 		"description": "Bonnet à pompon officiel logo PAYSAGE 100% synthétique",
 		"category": "headwear",
 		"price": 29.99,
@@ -311,7 +311,7 @@
 	},
 	{
 		"name": "POLO officiel HOMME 205 Trophée 2027",
-		"slug": "POLO-homme-officiel-205-BC470",
+		"slug": "polo-homme-officiel-205-bc470",
 		"description": "Polo homme officiel avec les deux logos 100% coton",
 		"category": "vêtement",
 		"price": 29.99,
@@ -344,7 +344,7 @@
 	},
 	{
 		"name": "POLO officiel FEMME 205 Trophée 2027",
-		"slug": "POLO-femme-officiel-205-BC470",
+		"slug": "polo-femme-officiel-205-bc470",
 		"description": "Polo femme officiel avec les deux logos 100% coton",
 		"category": "vêtement",
 		"price": 29.99,
@@ -377,7 +377,7 @@
 	},
 	{
 		"name": "Softshell officiel FEMME 205 Trophée 2027",
-		"slug": "softshell-femme-officiel-205-PK777",
+		"slug": "softshell-femme-officiel-205-pk777",
 		"description": "Soft-Shell 2 couches FEMME officiel avec les deux logos 96% polyester/4% élasthanne. Intérieur: 100% polyester",
 		"category": "vêtement",
 		"price": 29.99,
@@ -400,7 +400,7 @@
 	},
 	{
 		"name": "Softshell officiel HOMME 205 Trophée 2027",
-		"slug": "softshell-homme-officiel-205-PK777",
+		"slug": "softshell-homme-officiel-205-pk777",
 		"description": "Soft-Shell 2 couches HOMME officiel avec les deux logos 96% polyester/4% élasthanne. Intérieur: 100% polyester",
 		"category": "vêtement",
 		"price": 29.99,
@@ -423,7 +423,7 @@
 	},
 	{
 		"name": "Sweet capuche officiel UNISEXE 205 Trophée 2027",
-		"slug": "sweet-officiel-205-BC523",
+		"slug": "sweet-officiel-205-bc523",
 		"description": "Sweet à capuche officiel avec les deux logos 50% coton 50% polyester",
 		"category": "vêtement",
 		"price": 29.99,
@@ -451,7 +451,7 @@
 	},
 	{
 		"name": "Sweet capuche zippé officiel UNISEXE 205 Trophée 2027",
-		"slug": "sweet-zippé-officiel-205-JK297",
+		"slug": "sweet-zippé-officiel-205-jk297",
 		"description": "Sweet à capuche zippé officiel  avec les deux logos en polyester",
 		"category": "vêtement",
 		"price": 29.99,
@@ -479,7 +479,7 @@
 	},
 	{
 		"name": "T-shirt officiel HOMME 205 Trophée 2027",
-		"slug": "T-SHIRT-homme-officiel-205-BC192",
+		"slug": "t-shirt-homme-officiel-205-bc192",
 		"description": "T-shirt homme officiel  avec les deux logos 100% coton pré-rétréci, Lavable jusqu`à 40°C",
 		"category": "vêtement",
 		"price": 14.99,
@@ -512,7 +512,7 @@
 	},
 	{
 		"name": "T-shirt officiel FEMME 205 Trophée 2027",
-		"slug": "T-SHIRT-femme-officiel-205-BC196",
+		"slug": "t-shirt-femme-officiel-205-bc196",
 		"description": "T-shirt femme officiel  avec les deux logos 100% coton pré-rétréci, Lavable jusqu`à 40°C",
 		"category": "vêtement",
 		"price": 14.99,
@@ -545,7 +545,7 @@
 	},
 	{
 		"name": "Doudoune sans manches unisexe 205 Trophée 2027",
-		"slug": "DOUDOUNE-officiel-205-BC644",
+		"slug": "doudoune-officiel-205-bc644",
 		"description": "Doudoune sans manches officiel avec les deux logos 100% nylon, Rembourrage 100% polyester Doublure 100% polyester, Revêtement déperlant",
 		"category": "vêtement",
 		"price": 59.99,
@@ -563,7 +563,7 @@
 	},
 	{
 		"name": "Pantalon unisexe DTF 205 Trophée 2027",
-		"slug": "pantalon-officiel-205-DTF-K7021",
+		"slug": "pantalon-officiel-205-dtf-k7021",
 		"description": "Pantalon officiel avec le logo DTF, 80% coton / 20% polyester",
 		"category": "vêtement",
 		"price": 59.99,
@@ -586,7 +586,7 @@
 	},
 	{
 		"name": "Pantalon unisexe PAYSAGE 205 Trophée 2027",
-		"slug": "pantalon-officiel-205-PAYSAGE-K7021",
+		"slug": "pantalon-officiel-205-paysage-k7021",
 		"description": "Pantalon officiel avec le logo PAYSAGE, 80% coton / 20% polyester",
 		"category": "vêtement",
 		"price": 59.99,
@@ -609,7 +609,7 @@
 	},
 	{
 		"name": "MUG 205 DTF",
-		"slug": "MUG-officiel-205-DTF",
+		"slug": "mug-officiel-205-dtf",
 		"description": "Mug en céramique 350 ml intérieur orange logo DTF",
 		"category": "goodies",
 		"price": 4.99,
@@ -626,7 +626,7 @@
 	},
 	{
 		"name": "MUG 205 PAYSAGE",
-		"slug": "MUG-officiel-205-PAYSAGE",
+		"slug": "mug-officiel-205-paysage",
 		"description": "Mug en céramique 350 ml intérieur bleu clair logo PAYSAGE",
 		"category": "goodies",
 		"price": 4.99,
@@ -643,7 +643,7 @@
 	},
 	{
 		"name": "FLAMME DTF",
-		"slug": "FLAMME-officiel-205-DTF",
+		"slug": "flamme-officiel-205-dtf",
 		"category": "goodies",
 		"price": 4.99,
 		"images": [],
@@ -652,7 +652,7 @@
 	},
 	{
 		"name": "PORTE CLEF DTF",
-		"slug": "porte-clef-officiel-205-DTF",
+		"slug": "porte-clef-officiel-205-dtf",
 		"category": "goodies",
 		"price": 4.99,
 		"images": [],
@@ -661,7 +661,7 @@
 	},
 	{
 		"name": "PORTE CLEF PAYSAGE",
-		"slug": "porte-clef-officiel-205-PAYSAGE",
+		"slug": "porte-clef-officiel-205-paysage",
 		"category": "goodies",
 		"price": 4.99,
 		"images": [],
@@ -670,7 +670,7 @@
 	},
 	{
 		"name": "PATCH Brodé DTF",
-		"slug": "patch-officiel-205-DTF",
+		"slug": "patch-officiel-205-dtf",
 		"category": "goodies",
 		"price": 4.99,
 		"images": [],
@@ -679,7 +679,7 @@
 	},
 	{
 		"name": "PATCH Brodé PAYSAGE",
-		"slug": "patch-officiel-205-PAYSAGE",
+		"slug": "patch-officiel-205-paysage",
 		"category": "goodies",
 		"price": 4.99,
 		"images": [],
@@ -688,7 +688,7 @@
 	},
 	{
 		"name": "Décapsuleur PAYSAGE",
-		"slug": "decapsuleur-officiel-205-PAYSAGE",
+		"slug": "decapsuleur-officiel-205-paysage",
 		"category": "goodies",
 		"price": 4.99,
 		"images": [],
@@ -697,7 +697,7 @@
 	},
 	{
 		"name": "Décapsuleur DTF",
-		"slug": "decapsuleur-officiel-205-DTF",
+		"slug": "decapsuleur-officiel-205-dtf",
 		"category": "goodies",
 		"price": 4.99,
 		"images": [],

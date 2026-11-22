@@ -41,6 +41,8 @@ export const getProducts = async (req, res) => {
 // GET /api/products/:slug
 export const getProductBySlug = async (req, res) => {
 	try {
+		console.log(req.params.slug);
+		
 		const product = await Product.findOne({
 			slug: req.params.slug,
 			isActive: true
