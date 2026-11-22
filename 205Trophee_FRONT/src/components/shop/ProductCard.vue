@@ -1,20 +1,47 @@
 <script setup>
+import { computed, ref, watch } from 'vue';
+
+const props = defineProps({
+	product: {
+		type: Object,
+		required: true
+	}
+});
+
+const sizes = ref(props.product?.variants?.[0].sizes || []);
+const selectedVariant = ref(props.product?.variants?.[0].color || null);
+const bgStyle = computed(() => ({
+	backgroundImage: `url(${new URL(`../../assets/${props.product?.images?.[0]}`, import.meta.url).href})`
+}))
+
+const selectVariant = (variant) => {
+	selectedVariant.value = variant.color;
+};
+
+watch(selectedVariant, () => {
+	sizes.value = props.product?.variants?.find(v => v.color === selectedVariant.value)?.sizes || [];
+
+})
 </script>
 
 <template>
 	<div class="product-card-container">
-		<div class="img-container">
-
-		</div>
+		<div class="img-container background" :style="bgStyle"></div>
 		<div class="text-container">
-			<div class="colors">
-				<div class="blanc"></div>
-				<div class="noir"></div>
-				<div class="bleu"></div>
+			<div class="colors" v-if="product?.variants?.length > 0">
+				<div :class="[variant.color, selectedVariant === variant.color ? 'selected' : '']"
+					:style="{ backgroundColor: variant.colorCode }" v-for="variant in product.variants"
+					@click="selectVariant(variant)" :key="variant.color" :title="variant.color"></div>
 			</div>
-			<h4>T-shirt Officiel 205 DTF</h4>
-			<div class="size">S - M - L - XL</div>
-			<div class="price">99.99€</div>
+			<h4>{{ product.name }}</h4>
+			<div class="sexe" v-if="product?.sexe">Produit {{ product.sexe }}</div>
+			<div class="size">
+				<span v-for="(size, idx) in sizes">
+					{{ size }}
+					<span v-if="idx !== sizes.length - 1"> - </span>
+				</span>
+			</div>
+			<div class="price">{{ product.price }}€</div>
 		</div>
 	</div>
 </template>
@@ -49,13 +76,28 @@
 	width: 16px;
 	border-radius: 100%;
 	margin-bottom: 0.5em;
+	cursor: pointer;
+	transition: all 0.1s ease-in-out;
 }
 
-.noir {
-	background-color: black;
+.colors div.selected {
+	border: 1px solid var(--color-orange);
 }
 
-.bleu {
-	background-color: rgb(0, 162, 255);
+.sexe {
+	font-size: 0.6em;
+}
+
+.size,
+.price {
+	font-size: 0.8em;
+}
+
+div.background {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0.7em;
+	overflow: hidden;
 }
 </style>

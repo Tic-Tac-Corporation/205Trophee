@@ -1,106 +1,707 @@
 [
 	{
-		"name": "T-shirt officiel 205 Trophée 2027",
-		"slug": "t-shirt-officiel-205-trophee-2027",
-		"description": "T-shirt officiel aux couleurs du 205 Trophée 2027.",
-		"category": "vetements",
-		"price": 2500,
-		"images": [
-			"https://monsite.fr/images/tshirt-face.jpg",
-			"https://monsite.fr/images/tshirt-dos.jpg"
-		],
+		"name": "Casquette Logo 205 PAYSAGE",
+		"slug": "casquette-205-PAYSAGE-BF25",
+		"description": "Casquette officielle floqués 100% coton",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
 		"variants": [
 			{
-				"size": "S",
-				"color": "Noir"
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
 			},
 			{
-				"size": "M",
-				"color": "Noir"
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
 			},
 			{
-				"size": "L",
-				"color": "Noir"
+				"color": "Blanc",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
 			},
 			{
-				"size": "XL",
-				"color": "Noir"
+				"color": "Noir",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
 			}
 		],
 		"isActive": true,
 		"isFeatured": true
 	},
 	{
-		"name": "Casquette 205 Trophée",
-		"slug": "casquette-205-trophee",
-		"description": "Casquette officielle brodée aux couleurs du 205 Trophée.",
-		"category": "accessoires",
-		"price": 1800,
-		"images": [
-			"https://monsite.fr/images/casquette.jpg"
-		],
+		"name": "Casquette Logo 205 DTF",
+		"slug": "casquette-205-DTF-BF25",
+		"description": "Casquette officielle floqués 100% coton",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
 		"variants": [
 			{
-				"size": "Unique",
-				"color": "Noir"
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Noir",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
 			}
 		],
 		"isActive": true,
-		"isFeatured": true
+		"isFeatured": false
 	},
 	{
-		"name": "Autocollant officiel 205 Trophée",
-		"slug": "autocollant-officiel-205-trophee",
+		"name": "Autocollant officiel 205 DTF",
+		"slug": "autocollant-officiel-205-DTF",
 		"description": "Autocollant officiel du 205 Trophée 2027.",
 		"category": "goodies",
-		"price": 300,
-		"images": [
-			"https://monsite.fr/images/autocollant.jpg"
+		"price": 0.50,
+		"images": [],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Autocollant officiel 205 PAYSAGE",
+		"slug": "autocollant-officiel-205-PAYSAGE",
+		"description": "Autocollant officiel du 205 Trophée 2027.",
+		"category": "goodies",
+		"price": 0.50,
+		"images": ["autocollant-officiel-205-PAYSAGE.jpg"],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Bonnet coton Logo 205 DTF",
+		"slug": "bonnet-205-DTF-BF050",
+		"description": "Bonnet officiel logo DTF 100% coton",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			}
 		],
 		"isActive": true,
 		"isFeatured": false
 	},
 	{
-		"name": "Sweat 205 Trophée",
-		"slug": "sweat-205-trophee",
-		"description": "Sweat confortable aux couleurs de l'aventure 205 Trophée.",
-		"category": "vetements",
-		"price": 4500,
-		"images": [
-			"https://monsite.fr/images/sweat-face.jpg",
-			"https://monsite.fr/images/sweat-dos.jpg"
-		],
+		"name": "Bonnet coton Logo 205 PAYSAGE",
+		"slug": "bonnet-205-PAYSAGE-BF050",
+		"description": "Bonnet officiel logo PAYSAGE 100% coton",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
 		"variants": [
 			{
-				"size": "S",
-				"color": "Noir"
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
 			},
 			{
-				"size": "M",
-				"color": "Noir"
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
 			},
 			{
-				"size": "L",
-				"color": "Noir"
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Bonnet synthétique Logo 205 DTF",
+		"slug": "bonnet-205-DTF-AT703",
+		"description": "Bonnet officiel logo DTF 100% synthétique",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
 			},
 			{
-				"size": "XL",
-				"color": "Noir"
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Bonnet synthétique Logo 205 PAYSAGE",
+		"slug": "bonnet-205-PAYSAGE-AT703",
+		"description": "Bonnet officiel logo PAYSAGE 100% synthétique",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Bonnet coton POMPON Logo 205 DTF",
+		"slug": "bonnet-POMPON-205-DTF-BF450N",
+		"description": "Bonnet à pompon officiel logo DTF 100% coton",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Bonnet coton POMPON Logo 205 PAYSAGE",
+		"slug": "bonnet-POMPON-205-PAYSAGE-BF450N",
+		"description": "Bonnet à pompon officiel logo PAYSAGE 100% coton",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Bonnet POMPON synthétique Logo 205 DTF",
+		"slug": "bonnet-205-POMPON-DTF-AT309",
+		"description": "Bonnet à pompon officiel logo DTF 100% synthétique",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "Bonnet POMPON synthétique Logo 205 PAYSAGE",
+		"slug": "bonnet-205-POMPON-PAYSAGE-AT309",
+		"description": "Bonnet à pompon officiel logo PAYSAGE 100% synthétique",
+		"category": "headwear",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#FFFFFF",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Graphite",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Beige",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#F5F5DC",
+				"sizes": ["Taille unique"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": false
+	},
+	{
+		"name": "POLO officiel HOMME 205 Trophée 2027",
+		"slug": "POLO-homme-officiel-205-BC470",
+		"description": "Polo homme officiel avec les deux logos 100% coton",
+		"category": "vêtement",
+		"price": 29.99,
+		"images": [],
+		"sexe": "homme",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Anthracite",
+				"colorCode": "#383E42",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Beige",
+				"colorCode": "#EDE8D0",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
 			}
 		],
 		"isActive": true,
 		"isFeatured": true
 	},
 	{
-		"name": "Porte-clés 205 Trophée",
-		"slug": "porte-cles-205-trophee",
-		"description": "Porte-clés aux couleurs du 205 Trophée 2027.",
-		"category": "goodies",
-		"price": 600,
-		"images": [
-			"https://monsite.fr/images/porte-cles.jpg"
+		"name": "POLO officiel FEMME 205 Trophée 2027",
+		"slug": "POLO-femme-officiel-205-BC470",
+		"description": "Polo femme officiel avec les deux logos 100% coton",
+		"category": "vêtement",
+		"price": 29.99,
+		"images": [],
+		"sexe": "femme",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Anthracite",
+				"colorCode": "#383E42",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Beige",
+				"colorCode": "#EDE8D0",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			}
 		],
 		"isActive": true,
-		"isFeatured": false
+		"isFeatured": true
+	},
+	{
+		"name": "Softshell officiel FEMME 205 Trophée 2027",
+		"slug": "softshell-femme-officiel-205-PK777",
+		"description": "Soft-Shell 2 couches FEMME officiel avec les deux logos 96% polyester/4% élasthanne. Intérieur: 100% polyester",
+		"category": "vêtement",
+		"price": 29.99,
+		"images": [],
+		"sexe": "femme",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["S", "M", "L", "XL", "XXL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["S", "M", "L", "XL", "XXL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Softshell officiel HOMME 205 Trophée 2027",
+		"slug": "softshell-homme-officiel-205-PK777",
+		"description": "Soft-Shell 2 couches HOMME officiel avec les deux logos 96% polyester/4% élasthanne. Intérieur: 100% polyester",
+		"category": "vêtement",
+		"price": 29.99,
+		"images": [],
+		"sexe": "homme",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Sweet capuche officiel UNISEXE 205 Trophée 2027",
+		"slug": "sweet-officiel-205-BC523",
+		"description": "Sweet à capuche officiel avec les deux logos 50% coton 50% polyester",
+		"category": "vêtement",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+			},
+			{
+				"color": "Gris Sombre",
+				"colorCode": "#A9A9A9",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Sweet capuche zippé officiel UNISEXE 205 Trophée 2027",
+		"slug": "sweet-zippé-officiel-205-JK297",
+		"description": "Sweet à capuche zippé officiel  avec les deux logos en polyester",
+		"category": "vêtement",
+		"price": 29.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+			},
+			{
+				"color": "Gris",
+				"colorCode": "grey",
+				"sizes": ["S", "M", "L", "XL", "XXL", "3XL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "T-shirt officiel HOMME 205 Trophée 2027",
+		"slug": "T-SHIRT-homme-officiel-205-BC192",
+		"description": "T-shirt homme officiel  avec les deux logos 100% coton pré-rétréci, Lavable jusqu`à 40°C",
+		"category": "vêtement",
+		"price": 14.99,
+		"images": [],
+		"sexe": "homme",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL", "5XL"]
+			},
+			{
+				"color": "Gris Sombre",
+				"colorCode": "#A9A9A9",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL"]
+			},
+			{
+				"color": "Sable",
+				"colorCode": "#C2B280",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "T-shirt officiel FEMME 205 Trophée 2027",
+		"slug": "T-SHIRT-femme-officiel-205-BC196",
+		"description": "T-shirt femme officiel  avec les deux logos 100% coton pré-rétréci, Lavable jusqu`à 40°C",
+		"category": "vêtement",
+		"price": 14.99,
+		"images": [],
+		"sexe": "femme",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL"]
+			},
+			{
+				"color": "Blanc",
+				"colorCode": "#FFFFFF",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL"]
+			},
+			{
+				"color": "Gris Sombre",
+				"colorCode": "#A9A9A9",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+			},
+			{
+				"color": "Sable",
+				"colorCode": "#C2B280",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Doudoune sans manches unisexe 205 Trophée 2027",
+		"slug": "DOUDOUNE-officiel-205-BC644",
+		"description": "Doudoune sans manches officiel avec les deux logos 100% nylon, Rembourrage 100% polyester Doublure 100% polyester, Revêtement déperlant",
+		"category": "vêtement",
+		"price": 59.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Pantalon unisexe DTF 205 Trophée 2027",
+		"slug": "pantalon-officiel-205-DTF-K7021",
+		"description": "Pantalon officiel avec le logo DTF, 80% coton / 20% polyester",
+		"category": "vêtement",
+		"price": 59.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Gris Sombre",
+				"colorCode": "#A9A9A9",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Pantalon unisexe PAYSAGE 205 Trophée 2027",
+		"slug": "pantalon-officiel-205-PAYSAGE-K7021",
+		"description": "Pantalon officiel avec le logo PAYSAGE, 80% coton / 20% polyester",
+		"category": "vêtement",
+		"price": 59.99,
+		"images": [],
+		"sexe": "unisexe",
+		"variants": [
+			{
+				"color": "Noir",
+				"colorCode": "#000000",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			},
+			{
+				"color": "Gris Sombre",
+				"colorCode": "#A9A9A9",
+				"sizes": ["XS", "S", "M", "L", "XL", "XXL", "3XL", "4XL"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "MUG 205 DTF",
+		"slug": "MUG-officiel-205-DTF",
+		"description": "Mug en céramique 350 ml intérieur orange logo DTF",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"variants": [
+			{
+				"color": "Blanc centre orange",
+				"colorCode": "#FFFFFF",
+				"sizes": ["350 ml"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "MUG 205 PAYSAGE",
+		"slug": "MUG-officiel-205-PAYSAGE",
+		"description": "Mug en céramique 350 ml intérieur bleu clair logo PAYSAGE",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"variants": [
+			{
+				"color": "Blanc centre bleu",
+				"colorCode": "#FFFFFF",
+				"sizes": ["350 ml"]
+			}
+		],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "FLAMME DTF",
+		"slug": "FLAMME-officiel-205-DTF",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "PORTE CLEF DTF",
+		"slug": "porte-clef-officiel-205-DTF",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "PORTE CLEF PAYSAGE",
+		"slug": "porte-clef-officiel-205-PAYSAGE",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "PATCH Brodé DTF",
+		"slug": "patch-officiel-205-DTF",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "PATCH Brodé PAYSAGE",
+		"slug": "patch-officiel-205-PAYSAGE",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Décapsuleur PAYSAGE",
+		"slug": "decapsuleur-officiel-205-PAYSAGE",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"isActive": true,
+		"isFeatured": true
+	},
+	{
+		"name": "Décapsuleur DTF",
+		"slug": "decapsuleur-officiel-205-DTF",
+		"category": "goodies",
+		"price": 4.99,
+		"images": [],
+		"isActive": true,
+		"isFeatured": true
 	}
 ]

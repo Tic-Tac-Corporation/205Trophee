@@ -47,7 +47,7 @@ header .header-background {
 	background-image: url('@/assets/sponsor_header.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 	height: 700px;
 
 	display: flex;

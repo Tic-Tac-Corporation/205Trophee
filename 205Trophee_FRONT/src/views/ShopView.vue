@@ -1,6 +1,8 @@
 <script setup>
 import ProductCard from '@/components/shop/ProductCard.vue';
 
+import ProductsList from '../../../205Trophee_API/products.json';
+
 </script>
 
 <template>
@@ -10,8 +12,8 @@ import ProductCard from '@/components/shop/ProductCard.vue';
 		</div>
 
 		<div class="shop-container text-padding">
-			<template v-for="n in 10">
-				<ProductCard />
+			<template v-for="product in ProductsList">
+				<ProductCard :product="product" />
 			</template>
 		</div>
 	</main>
