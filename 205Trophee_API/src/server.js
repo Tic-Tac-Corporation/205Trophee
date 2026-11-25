@@ -10,6 +10,8 @@ import connectDatabase from './config/database.js';
 import contactRoutes from './routes/contactRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 
+import { verifySMTP } from './services/mailService.js';
+
 const app = express();
 
 // Sécurité HTTP
@@ -47,6 +49,7 @@ app.use('/api/products', productRoutes);
 const startServer = async () => {
 	try {
 		await connectDatabase();
+		await verifySMTP();
 
 		const PORT = process.env.PORT || 3000;
 

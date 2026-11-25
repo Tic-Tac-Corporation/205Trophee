@@ -1,4 +1,6 @@
+
 import Contact from '../models/Contact.js';
+import { sendEmail } from '../services/mailService.js';
 
 const ALLOWED_TYPES = ['sponsor', 'merch', 'contact'];
 
@@ -35,7 +37,7 @@ const validateMerchProducts = (products) => {
 };
 
 const validateShippingAddress = (address) => {
-	if (!address || typeof address !== 'object') {
+	if (!address || typeof address !== 'object' || Array.isArray(address)) {
 		return false;
 	}
 
@@ -43,10 +45,76 @@ const validateShippingAddress = (address) => {
 		isValidString(address.street) &&
 		isValidString(address.postalCode) &&
 		isValidString(address.city) &&
-		isValidString(address.country ?? 'France')
+		(
+			address.country === undefined ||
+			isValidString(address.country)
+		)
 	);
 };
 
+// Génération du contenu de l'email
+const generateEmailContent = (contact) => {
+	const typeLabels = {
+		sponsor: 'Demande de sponsoring',
+		merch: 'Demande de merchandising',
+		contact: 'Nouveau message de contact'
+	};
+
+	let text = `
+Nouvelle demande depuis le site 205 Trophée
+
+Type : ${typeLabels[contact.type]}
+
+Nom : ${contact.name}
+Email : ${contact.email}
+`;
+
+	if (contact.subject) {
+		text += `Sujet : ${contact.subject}\n`;
+	}
+
+	if (contact.message) {
+		text += `
+Message :
+${contact.message}
+`;
+	}
+
+	// Informations complémentaires
+	if (contact.details && Object.keys(contact.details).length > 0) {
+		text += `
+Informations complémentaires :
+${JSON.stringify(contact.details, null, 2)}
+`;
+	}
+
+	// Informations spécifiques au formulaire Merch
+	if (contact.type === 'merch') {
+		text += `
+Produits demandés :
+`;
+
+		contact.details.products.forEach(product => {
+			text += `
+- ${product.name}
+  Quantité : ${product.quantity}
+  Taille : ${product.size || 'Non renseignée'}
+`;
+		});
+
+		text += `
+Adresse de livraison :
+${contact.shippingAddress.street}
+${contact.shippingAddress.additional || ''}
+${contact.shippingAddress.postalCode} ${contact.shippingAddress.city}
+${contact.shippingAddress.country}
+`;
+	}
+
+	return text;
+};
+
+// Création d'un contact
 const createContact = async (req, res) => {
 	try {
 		const {
@@ -148,7 +216,7 @@ const createContact = async (req, res) => {
 			}
 		}
 
-		// 8. Création du document
+		// 8. Création du document MongoDB
 		const contact = await Contact.create({
 			type,
 			name: name.trim(),
@@ -167,10 +235,36 @@ const createContact = async (req, res) => {
 				: undefined
 		});
 
-		// 9. Réponse
+		// 9. Envoi de l'email
+		let emailSent = false;
+
+		try {
+			const typeLabels = {
+				sponsor: 'Demande de sponsoring',
+				merch: 'Demande de merchandising',
+				contact: 'Nouveau message de contact'
+			};
+
+			await sendEmail({
+				to: process.env.MAIL_TO,
+				replyTo: contact.email,
+				subject: `[205 Trophée] ${typeLabels[type]}`,
+				text: generateEmailContent(contact)
+			});
+
+			emailSent = true;
+
+		} catch (mailError) {
+			console.error('Email sending error:', mailError);
+		}
+
+		// 10. Réponse
 		return res.status(201).json({
 			success: true,
-			message: 'Votre demande a bien été enregistrée.',
+			message: emailSent
+				? 'Votre demande a bien été enregistrée et envoyée.'
+				: 'Votre demande a été enregistrée, mais une erreur est survenue lors de l’envoi de l’email.',
+			emailSent,
 			data: {
 				id: contact._id,
 				type: contact.type,
