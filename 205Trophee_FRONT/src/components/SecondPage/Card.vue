@@ -80,14 +80,11 @@ div.title span {
 
 .link {
 	text-align: center;
+	color: var(--color-text);
+	padding: 0.3em 0.5em;
 }
 
 .card-container:hover div.title {
 	opacity: 1;
-}
-
-.link {
-	padding: 0.3em 0.5em;
-	color: var(--color-boue);
 }
 </style>

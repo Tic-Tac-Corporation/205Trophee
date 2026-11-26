@@ -28,7 +28,7 @@ const carInfos = [
 	{
 		title: "Transmission",
 		icon: IconEngine,
-		info: "Traction avant",
+		info: "Traction",
 	},
 	{
 		title: "Poids",
@@ -66,14 +66,14 @@ const selectDot = (id) => {
 				de compétition, mais de la préparer pour affronter le 205 Trophée dans
 				les meilleurs conditions. Chaque modification répond à un besoin
 				concret : fiabilité, sécurité, autonomie ou confort, tout en conservant
-				une mécanisque simple et réparable.
+				une mécanisme simple et réparable.
 			</p>
 		</div>
 
 		<div class="image-container">
 			<img src="@/assets/205_profil.png" alt="Peugeot 205 Gris Zénith" />
 
-			<CarDot v-for="dot in carDots" :title="dot.title" :description="dot.descirption" :x="dot.x" :y="dot.y" :selected="selectedDotID === dot.id" @click="selectDot(dot.id)" />
+			<CarDot v-for="dot in carDots" :title="dot.title" :description="dot.description" :x="dot.x" :y="dot.y" :selected="selectedDotID === dot.id" @click="selectDot(dot.id)" />
 		</div>
 
 		<div class="infos-container">

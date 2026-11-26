@@ -99,7 +99,7 @@ import IconStar from '../SVG/IconStar.vue';
 
 .item {
 	padding: 1em;
-	border: 1px solid var(--color-orange);
+	border: 3px solid var(--color-orange);
 	border-radius: 0.5em;
 	display: flex;
 	gap: 2em;
@@ -107,20 +107,24 @@ import IconStar from '../SVG/IconStar.vue';
 	position: relative;
 }
 
+.item ul {
+	font-size: larger;
+}
+
 .item:nth-child(1) {
-	color: grey;
+	border-color: grey;
 }
 
 .item:nth-child(2) {
-	color: rgb(109, 109, 255);
+	border-color: rgb(109, 109, 255);
 }
 
 .item:nth-child(3) {
-	color: var(--color-orange);
+	border-color: var(--color-orange);
 }
 
 .item:nth-child(4) {
-	color: rgb(218, 0, 218);
+	border-color: rgb(218, 0, 218);
 }
 
 .border-orange {
@@ -144,7 +148,7 @@ import IconStar from '../SVG/IconStar.vue';
 
 .text-center {
 	text-align: center;
-	font-size: smaller;
+	font-size: normal;
 }
 
 @media (max-width: 1440px) {

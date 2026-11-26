@@ -53,6 +53,11 @@ const props = defineProps({
 	font-weight: bold !important;
 }
 
+.pilote-firstname,
+.pilote-lastname {
+	color: black;
+}
+
 .pilote-lastname {
 	text-transform: uppercase;
 }
