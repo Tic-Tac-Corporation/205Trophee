@@ -1,0 +1,1 @@
+var e=`/205Trophee/assets/IMG_4153-DcyiBurR.jpeg`;export{e as t};
