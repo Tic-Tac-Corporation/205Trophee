@@ -5,11 +5,11 @@ import { onBeforeMount, ref } from 'vue';
 
 const ProductsList = ref([]);
 
-onBeforeMount(() => {
-	getProducts().then((products) => {
-		ProductsList.value = products;
-	});
-})
+// onBeforeMount(() => {
+// 	getProducts().then((products) => {
+// 		ProductsList.value = products;
+// 	});
+// })
 </script>
 
 <template>
@@ -19,8 +19,12 @@ onBeforeMount(() => {
 		</div>
 
 		<div class="shop-container text-padding">
-			<template v-for="product in ProductsList">
+			<template v-for="product in ProductsList" v-if="ProductsList.length > 0">
 				<ProductCard :product="product" />
+			</template>
+
+			<template v-else>
+				Boutique en cours de construction, revenez plus tard pour découvrir nos produits !
 			</template>
 		</div>
 	</main>

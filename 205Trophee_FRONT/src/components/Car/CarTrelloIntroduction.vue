@@ -11,8 +11,8 @@ import IconTool from '../SVG/IconTool.vue';
 		<h2>Comment est organisé notre <span class="text-orange">tableau de suivi ?</span></h2>
 		<p>
 			Pour suivre l'avancement de la préparation de notre Peugeot 205, nous utilisons un tableau Trello organisé
-			autour de quatre catégories complétmentaires. Chaque carte représente une tâche, un échange ou une étape
-			importante du projet, avec des photos, des descriptions et un état d'avencement.
+			autour de quatre catégories complémentaires. Chaque carte représente une tâche, un échange ou une étape
+			importante du projet, avec des photos, des descriptions et un état d’avancement.
 		</p>
 		<br>
 		<div class="cards-container">
@@ -23,7 +23,7 @@ import IconTool from '../SVG/IconTool.vue';
 				</div>
 				<p>
 					Les grandes étapes du projet qui
-					rythment la préaparation de la 205.
+					rythment la préparation de la 205.
 					Ils nous permettent de suivre l'avancement
 					global et de valider chaque phase avant
 					de passer à la suivante.
@@ -52,8 +52,8 @@ import IconTool from '../SVG/IconTool.vue';
 				<p>
 					L'adaptation de la voiture aux contraintes
 					du 205 Trophée : protection, sécurité,
-					automnomie et équipements spécifiques
-					pour les pistes marocaines, en couservant
+					autonomie et équipements spécifiques
+					pour les pistes marocaines, en conservant
 					une philosophie simple et réparable.
 				</p>
 			</div>
@@ -67,7 +67,7 @@ import IconTool from '../SVG/IconTool.vue';
 					Des essais routiers et tout-terrain pour
 					valider les différentes modifications,
 					vérifier la fiabilité des équipements
-					et identifer d'éventuels point d'amélioration
+					et identifier d'éventuels point d'amélioration
 					avant le départ.
 				</p>
 			</div>

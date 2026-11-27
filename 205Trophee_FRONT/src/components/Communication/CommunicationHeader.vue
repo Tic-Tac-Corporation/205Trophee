@@ -6,25 +6,14 @@
 		<div class="header-background">
 			<div class="header-title">
 				<div class="russo-one">
-					Vivez le raid <br>
-					de l'<span>intérieur</span>
+					Des pistes <br>
+					aux <span>Écrans</span>
 				</div>
 				<div class="header-subtitle">
 					<br>
-					Grâce à notre dispositif de captation et de diffusion <br>
-					embarqué, suivez la route, l'équipage et les coulisses <br>
-					de l'aventure au plus près du terrain.
-					<div>
-						<br><br>
-						<a href="https://www.twitch.tv/205dtf" target="_blank" class="btn-twitch">
-							VOIR LE DIRECT
-						</a>
-						<br><br><br>
-						<div class="next-live">
-							<span></span>
-							Prochain direct à venir
-						</div>
-					</div>
+					Un système embarqué conçu pour transmettre les images <br>
+					du raid, conserver les communications et partager l'aventure <br>
+					depuis les pistes marocaines.
 				</div>
 			</div>
 

@@ -105,6 +105,7 @@ import IconStar from '../SVG/IconStar.vue';
 	gap: 2em;
 	min-width: 250px;
 	position: relative;
+	background-color: var(--color-border);
 }
 
 .item ul {

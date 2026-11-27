@@ -121,6 +121,7 @@ import IconWifi from '../SVG/IconWifi.vue';
 	padding: 0.5em;
 	font-size: smaller;
 	border-radius: 0.5em;
+	background-color: var(--color-border);
 }
 
 .items-container .item:nth-child(2n+1) {
